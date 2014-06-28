@@ -1,0 +1,247 @@
+
+<!--mixin author(authorName)
+- var author = contents.authors[authorName + '.json']
+span.author
+  if author
+    a(href='mailto:'+author.metadata.email)= author.metadata.name
+  else
+    =authorName
+    
+-->
+<!--mixin postThumb(post)
+a(href!=post.url)
+  div.post.post-dimension
+    div.post-thumbnail.tint.post-dimension
+      img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+    p.post-title= post.title
+    div.post-lower-section
+      div.post-line-left
+      div#post-date-wrap
+        p.post-date= post.date
+          span.fycon-conversation.post-comment
+          span.post-comment-count
+            span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+      div.post-line-right
+      
+      
+-->
+<!--mixin headSlider(title, imgUrl)
+section#home.full-screen
+  div#slider
+    nav.slides-navigation
+    a.prev(href='#')
+    a.next(href='#')
+    ul.slides-container
+      li
+        div.image-caption
+          div.inner
+            h2.bigtext.strtoupper.nomargin title
+        div.fullscreen-img(style='background-image: ' + imgUrl)
+        
+        
+-->
+<!--mixin postModal(post)
+// CSS Rules?
+.modal-header
+  header
+    h2!= typogr(page.title).typogrify()
+    p.post-date
+      i.fa.fa-calendar
+      span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+.modal-body
+  article.post-content!= typogr(page.html).typogrify()
+  .divider
+  
+  
+--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Review: The Passionate Programmer by Chad Fowler - Joao's Life Journal - Myself, for my future generations - Joao.io
+    </title>
+    <!--link(rel='alternate', href='http://feeds.feedburner.com/slowtheory', type='application/rss+xml', title=locals.description)-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/media/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/media/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/media/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/media/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/assets/media/favicon.ico">
+    <!-- build:[href] /styles/main.min.css -->
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" media="screen, projection, print">
+    <!-- /build -->
+    <style>
+      body {
+        letter-spacing: 0.065em;
+      }
+      #blog figure img {
+        width: auto;
+      }
+      
+    </style>
+    <!-- build:[src] js/compiled.js-->
+    <script src="js/bundled.js"></script>
+    <!-- /build -->
+  </head>
+  <body>
+    <header class="splash">
+      <div class="transparency"></div>
+      <div class="container">
+        <h1>Joao's Life Journal
+        </h1>
+        <h2 class="text-center">Myself, for my future generations
+        </h2>
+      </div>
+    </header>
+    <!--end .splash-->
+    <nav role="navigation" class="navbar navbar-inverse">
+      <div class="container">
+        <div id="menu" role="navigation" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Categories</a></li>
+            <li><a href="/">Résumé</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end .navbar-->
+    <!--block modal
+    .modal.fade.content
+      .modal-dialog
+        .modal-content
+        
+    -->
+    <main class="container">
+      <section class="content row">
+        <!--article.col-xs-12.col-md-8-->
+        <article class="col-xs-12">
+          <header>
+            <h3>Review: The Passionate Programmer by Chad&nbsp;Fowler</h3>
+            <p class="post-date"><i class="fa fa-calendar"></i><span style="margin-left:10px">April 6th, 2013</span>
+            </p>
+          </header>
+          <div class="post-content"><p><img src="/posts/2013-04-06_1/splash.jpg" alt="Cover image for The Passionate Programmer" title="The Passionate Programmer by Chad Fowler"></p>
+<p>The Passionate Programmer by Chad&nbsp;Fowler.</p>
+<p><span class="more-2"></span></p>
+<p>The Passionate Programmer by Chad Fowler
+I would highly recommend this book to anyone just starting a career in software or seriously thinking about it. The individuals who excel in the <span class="caps">IT</span> world regularly exhibit the attributes that are described in this book. The best software engineers that I’ve worked with and the development managers that I’ve worked under each exhibit 80+% of these traits, and it isn’t a&nbsp;coincidence.</p>
+<p><em>To be competitive in tech hotspots like the Silicon Valley</em>, you need to not only build an expert level of knowledge in your preferred language, but also be familiar with up-and-coming languages, new tools and frameworks that are gaining a following, the stacked technologies that encompass your product, domain knowledge for your product’s industry, and business and economics knowledge that will help you measure your own value within the company. This book is a very generalized guide to excelling in the <span class="caps">IT</span>&nbsp;world.</p>
+<p><em>If you’re already three or more years into your career</em> as a software engineer, then you’ve probably already noticed most of these traits pouring from your superiors at the office. You’ve probably already pinpointed a few of the traits that lead them to succeed and be regularly recognized by upper management for their excellent contributions. Hopefully, you’ve also begun to mimic them and develop a few of these traits that you’ve noticed. But wouldn’t it be nice if you had a complete list of these success traits, that you could read and understand now instead of slowly recognizing them from months and years of studying your superiors; some sort of guide with general instructions that will help you to be one of the regularly recognized <span class="caps">IT</span> leaders at your company sooner than later? This book is&nbsp;it.</p>
+<p>Now, I don’t think this book is written as well as it could be. There are times where the author seems to be repeating himself just to increase page count. There are a few “act on it” sections that are too vague, even for a book that presents itself as a general guide. These issues might cause a little frustration at times, but they are the exceptions to an otherwise insightful&nbsp;book.</p>
+<p>If you’re a software engineer and you’re feeling stagnant at your work, then you need to begin implementing the suggestions in this book. You’ll either start getting recognized for being a better engineer or you’ll be better equipped to start strong at a new job where you’ll get the recognition that you deserve. I’m glad I read it and I’ll be recommending it to colleagues who are frustrated in their&nbsp;workplaces.</p>
+<p><a href="http://wordpress.redirectingat.com/?id=725X584219&amp;site=jewow.wordpress.com&amp;xs=1&amp;isjs=1&amp;url=http%3A%2F%2Fwww.amazon.com%2FThe-Passionate-Programmer-Remarkable-Development%2Fdp%2F1934356344%2Fref%3Dsr_1_1%3Fie%3DUTF8%26qid%3D1365233048%26sr%3D8-1%26keywords%3Dthe%2Bpassionate%2Bprogrammer&amp;xguid=76d23e84e3b61bba9f7734e868be6e73&amp;xcreo=0&amp;xed=0&amp;sref=http%3A%2F%2Fjewow.wordpress.com%2F2013%2F04%2F06%2Freview-the-passionate-programmer-by-chad-fowler%2F&amp;pref=http%3A%2F%2Fjewow.wordpress.com%2F&amp;xtz=420" title="The Passionate Programmer by Chad Fowler">Amazon</a><br><span class="caps">ISBN</span>-10: 1934356344<br><span class="caps">ISBN</span>-13: 978-1934356340</p>
+</div>
+        </article>
+        <!--aside.col-xs-12.col-md-4| aside stuff
+        -->
+      </section>
+      <div class="row">
+        <ul class="pager text-center">
+          <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Previous post</a></li>
+          <li class="disabled next col-xs-6"><a>Next post <i class="fa fa-angle-double-right"></i></a></li>
+        </ul>
+      </div>
+      <!--.modal.fade.contact-modal
+      .modal-dialog.modal-sm
+        .modal-content
+          form.form-horizontal
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h2 Contact me
+            .modal-body
+              fieldset
+                .control-group
+                  label.control-label(for='contact_name') Name
+                  .controls
+                    input#contact_name.input-xlarge(name='contact_name', type='text', placeholder='Enter Name', required)
+                .control-group
+                  label.control-label(for='contact_email') Email
+                  .controls
+                    input#contact_email.input-xlarge(name='contact_email', type='email', placeholder='Enter Email', required)
+                .control-group
+                  label.control-label(for='contact_message') Message
+                  .controls
+                    textarea#contact_message(name='contact_message', placeholder='Enter Message', required)
+              .modal-footer
+                .control-group
+                  label.control-label(for='submit')
+                  .controls
+                    button#submit.btn.btn-default(name='submit') Send
+                    
+      -->
+    </main>
+    <footer class="container"><a href="#" class="fa fa-arrow-up toTop"></a>
+      <!--mixin author(authorName)
+      - var author = contents.authors[authorName + '.json']
+      span.author
+        if author
+          a(href='mailto:'+author.metadata.email)= author.metadata.name
+        else
+          =authorName
+          
+      -->
+      <!--mixin postThumb(post)
+      a(href!=post.url)
+        div.post.post-dimension
+          div.post-thumbnail.tint.post-dimension
+            img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+          p.post-title= post.title
+          div.post-lower-section
+            div.post-line-left
+            div#post-date-wrap
+              p.post-date= post.date
+                span.fycon-conversation.post-comment
+                span.post-comment-count
+                  span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+            div.post-line-right
+            
+            
+      -->
+      <!--mixin headSlider(title, imgUrl)
+      section#home.full-screen
+        div#slider
+          nav.slides-navigation
+          a.prev(href='#')
+          a.next(href='#')
+          ul.slides-container
+            li
+              div.image-caption
+                div.inner
+                  h2.bigtext.strtoupper.nomargin title
+              div.fullscreen-img(style='background-image: ' + imgUrl)
+              
+              
+      -->
+      <!--mixin postModal(post)
+      // CSS Rules?
+      .modal-header
+        header
+          h2!= typogr(page.title).typogrify()
+          p.post-date
+            i.fa.fa-calendar
+            span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      .modal-body
+        article.post-content!= typogr(page.html).typogrify()
+        .divider
+        
+        
+      -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6 text-center">
+                <div class="social"><a href="//www.github.com/joao-s-martins" class="fa fa-fw fa-github"></a><a href="//www.facebook.com/joao.martins.9440" class="fa fa-fw fa-facebook"></a><a href="//www.twitter.com/1906/joao" class="fa fa-fw fa-twitter"></a><a href="//www.linkedin.com/pub/john-martins/2/26a/49a" class="fa fa-fw fa-linkedin"></a></div>
+                <!--end .social-->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center">
+          <div class="copyright">Joao S. Martins<br></br>2014 © All Rights Reserved.<br></br>&copy; 2014, Joao Sousa Martins &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></div>
+          <!--end .copyright-->
+        </div>
+      </div>
+    </footer>
+    <script src="js/default.js"></script>
+  </body>
+</html>

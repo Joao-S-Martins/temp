@@ -1,0 +1,263 @@
+
+<!--mixin author(authorName)
+- var author = contents.authors[authorName + '.json']
+span.author
+  if author
+    a(href='mailto:'+author.metadata.email)= author.metadata.name
+  else
+    =authorName
+    
+-->
+<!--mixin postThumb(post)
+a(href!=post.url)
+  div.post.post-dimension
+    div.post-thumbnail.tint.post-dimension
+      img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+    p.post-title= post.title
+    div.post-lower-section
+      div.post-line-left
+      div#post-date-wrap
+        p.post-date= post.date
+          span.fycon-conversation.post-comment
+          span.post-comment-count
+            span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+      div.post-line-right
+      
+      
+-->
+<!--mixin headSlider(title, imgUrl)
+section#home.full-screen
+  div#slider
+    nav.slides-navigation
+    a.prev(href='#')
+    a.next(href='#')
+    ul.slides-container
+      li
+        div.image-caption
+          div.inner
+            h2.bigtext.strtoupper.nomargin title
+        div.fullscreen-img(style='background-image: ' + imgUrl)
+        
+        
+-->
+<!--mixin postModal(post)
+// CSS Rules?
+.modal-header
+  header
+    h2!= typogr(page.title).typogrify()
+    p.post-date
+      i.fa.fa-calendar
+      span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+.modal-body
+  article.post-content!= typogr(page.html).typogrify()
+  .divider
+  
+  
+--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Apple Pie Moonshine Recipe - Joao's Life Journal - Myself, for my future generations - Joao.io
+    </title>
+    <!--link(rel='alternate', href='http://feeds.feedburner.com/slowtheory', type='application/rss+xml', title=locals.description)-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/media/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/media/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/media/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/media/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/assets/media/favicon.ico">
+    <!-- build:[href] /styles/main.min.css -->
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" media="screen, projection, print">
+    <!-- /build -->
+    <style>
+      body {
+        letter-spacing: 0.065em;
+      }
+      #blog figure img {
+        width: auto;
+      }
+      
+    </style>
+    <!-- build:[src] js/compiled.js-->
+    <script src="js/bundled.js"></script>
+    <!-- /build -->
+  </head>
+  <body>
+    <header class="splash">
+      <div class="transparency"></div>
+      <div class="container">
+        <h1>Joao's Life Journal
+        </h1>
+        <h2 class="text-center">Myself, for my future generations
+        </h2>
+      </div>
+    </header>
+    <!--end .splash-->
+    <nav role="navigation" class="navbar navbar-inverse">
+      <div class="container">
+        <div id="menu" role="navigation" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Categories</a></li>
+            <li><a href="/">Résumé</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end .navbar-->
+    <!--block modal
+    .modal.fade.content
+      .modal-dialog
+        .modal-content
+        
+    -->
+    <main class="container">
+      <section class="content row">
+        <!--article.col-xs-12.col-md-8-->
+        <article class="col-xs-12">
+          <header>
+            <h3>Apple Pie Moonshine&nbsp;Recipe</h3>
+            <p class="post-date"><i class="fa fa-calendar"></i><span style="margin-left:10px">April 3rd, 2013</span>
+            </p>
+          </header>
+          <div class="post-content"><p><img src="/posts/2013-04-03_1/splash.jpg" alt="A jar of apple pie moonshine" title="My apple pie moonshine glows in the light so beautifully"></p>
+<p>Here is a basic apple pie moonshine recipe that you can make&nbsp;today!</p>
+<p><span class="more-2"></span></p>
+<p><em>Ingredients</em>:<br>1 qt apple juice<br>1 qt apple cider (or more juice)<br>1 c sugar<br>1 c moonshine<br>2 sticks cinnamon</p>
+<p><em>Equipment</em>:<br>3 qt pot<br>Stirring utensil<br>Serving utensil<br>Heat source</p>
+<p><em>Directions</em>:<br><strong>Warning – </strong>Moonshine is <strong>flammable</strong>. You’re about to heat things, probably using a stove with an open flame. Keep the moonshine very far away from the flame. If you spill some on your hands, makes sure to rinse it off immediatly.<br>Now, put everything into the pot <strong><span class="caps">EXCEPT</span></strong> the moonshine. Heat it on medium-high, stirring occasionally. Turn off the flame once it begins to boil. Let the liquid cool enough to be comfortably touchable, then stir in the moonshine. Remove the cinnamon and it is ready to be served or stored for&nbsp;later.</p>
+<p><strong>What is Apple&nbsp;Cider?</strong></p>
+<p>So here’s the deal. There isn’t a federal definition of apple cider. What one brand calls cider, another brand might call juice. In different parts of the nation, the local definition might refer to the juice of apples picked early in the season or the first pressing of a bunch of apples or the juice of only tart varietals. Generally, it’s just juice with a special name. Personally, I like to think that the name “cider” applies to fermented juices. I get the apple cider for my apple pie moonshine recipe by fermenting some of my apple juice. I like to use the Lalvin 71B-1122 strain of yeast and it takes about a week for the yeast to do its job. There already are a lot of articles and videos on the web about fermenting store-bought juices, so I won’t get into the details of how I do it. But basically, I choose a pasteurized juice without preservatives, throw in my yeast of choice and cap it with some sort of fermentation&nbsp;lock.</p>
+<p><strong>Where can I find moonshine? Isn’t it&nbsp;illegal?</strong></p>
+<p>Moonshine is a name for classic American corn whiskey or grain alcohol. There are legally produced bottles being sold in supermarkets, liquor stores, and specialty shops all around the nation. I recommend the Everclear brand. It is either 151 or 190 proof, depending on where you live and local and state laws. If you can’t find Everclear, just ask for grain alcohol or corn whiskey at your shop of&nbsp;choice.</p>
+<p><strong>How much alcohol is in apple pie&nbsp;moonshine?</strong></p>
+<p>As much as you want! Seriously though, you can vary the ingredients to get what you want. Using 151 proof Everclear and fermenting my cider gives me about 10.25% abv (like a wine). If I’m in a hurry and don’t ferment the cider, I end up with about 8% abv (like a strong&nbsp;beer).</p>
+<p><em>Here’s the math</em>:<br>Assuming you stick to the proportions I use (4 parts juice, 4 parts cider, 1 part moonshine, about 0.25 parts dissolved sugar), then you’ve got a total of 9.25 liquid parts. 1 part of that is moonshine @ X% abv (Everclear is 75.5% or 95%) and 4 parts are cider @ Y% abv (apple juice ferments to about 5% abv without added sugars).<br>So, (X + 4Y)/9.25 = final% abv.<br>For me, that’s usually (75.5 + 4×5)/9.25 = 10.3%&nbsp;abv.</p>
+<p><strong>Is there a more advanced&nbsp;recipe?</strong></p>
+<p>There sure is. Apple pie moonshine is a drink with infinite possibilities. Take the basic recipe that I gave earlier and consider adding other traditional apple pie baking ingredients, such as a little nutmeg and vanilla extract. Maybe replace half of the sugar with brown sugar or use juice concentrate so that the final product has less water and more alcohol. I’m still experimenting to find my perfect recipe, but here is a sample of what I’ve been drinking&nbsp;lately.</p>
+<p><em>Ingredients</em>:<br>4 qts apple juice<br>4 qts fermented apple juice (cider)<br>1 qt sugar<br>750ml bottle Everclear 151 proof<br>8 sticks of cinnamon, snapped in halves<br>4 tsp black strap molasses<br>1 tsp vanilla&nbsp;extract</p>
+<p><em>Equipment</em>:<br>10qt pot<br>heat source (open flame stove)<br>stirring utensil<br>serving utensil<br>funnel with mesh filter<br>candy thermometer that is easy to read @ 161 degrees&nbsp;fahrenheit</p>
+<p><em>Directions</em>:<br>Follow the flammable moonshine warning from earlier and combine all the ingredients except for the Everclear. Instead of boiling the ingredients, we are going to pasteurize them. Use the thermometer and bring the pot up to 161 degrees while stirring occasionally. Hold it at that temperature for a minute and then turn off the heat source. Let it cool down a little and stir in the Everclear. Remove the cinnamon with the help of the funnel and mesh filter, then serve or&nbsp;store.</p>
+<p><strong>Why pasteurize instead of&nbsp;boil?</strong></p>
+<p>Alcohol evaporates at about 170 degrees fahrenheit. In the simple recipe, the alcohol isn’t being heated; it’s all being added after the heat is off. In my recipe, the cider is fermented juice with alcohol that I don’t want to evaporate away. So, I pasteurize it, making sure to keep the temperature under 170 degrees. This kills any yeast or bacteria that might have gotten into the pot that could ruin my apple pie moonshine in&nbsp;storage.</p>
+<p><strong>How is apple pie moonshine&nbsp;served?</strong></p>
+<p>However you want. I think 8oz is a good serving size and I prefer to drink it warm on a cold day. Its also good chilled on a hot day. It’s extremely versatile. So long as you and your guests are in the mood for something sweet, then apple pie moonshine is a great&nbsp;choice.</p>
+<p><strong>How can apple pie moonshine be&nbsp;stored?</strong></p>
+<p>It depends on alcohol content. Apple pie moonshine is very sweet, which attracts bacteria, but the alcohol content and refrigeration can keep the bacteria from ruining your drink. Of course, you can keep it in a bottle in the refrigerator for a few weeks, just like apple juice. If your alcohol content is high enough (wine level), you can store it for months outside of a refridgerator. I like to store my 10.25% abv. recipe in the garage, in 8oz mason jars that I’ve sanitized. The jars are sanitized in a steam bath and the utensils are sanitized by being in the pot while the apple pie moonshine is being heated. I use the funnel and screen to help pour in the Everclear, which isn’t necessary, but sanitizes them to use with the jars&nbsp;later.</p>
+<p><strong>So how does apple pie moonshine&nbsp;taste?</strong></p>
+<p>Exactly like it sounds. It tastes like apple juice with cinnamon and sugar added. The alcohol is barely detectable to people who rarely drink and completely undetectable to us regular booze hounds. I find that using fermented cider and molasses knocks down that “fresh” apple taste and creates more of a “baked” apple&nbsp;taste.</p>
+</div>
+        </article>
+        <!--aside.col-xs-12.col-md-4| aside stuff
+        -->
+      </section>
+      <div class="row">
+        <ul class="pager text-center">
+          <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Previous post</a></li>
+          <li class="disabled next col-xs-6"><a>Next post <i class="fa fa-angle-double-right"></i></a></li>
+        </ul>
+      </div>
+      <!--.modal.fade.contact-modal
+      .modal-dialog.modal-sm
+        .modal-content
+          form.form-horizontal
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h2 Contact me
+            .modal-body
+              fieldset
+                .control-group
+                  label.control-label(for='contact_name') Name
+                  .controls
+                    input#contact_name.input-xlarge(name='contact_name', type='text', placeholder='Enter Name', required)
+                .control-group
+                  label.control-label(for='contact_email') Email
+                  .controls
+                    input#contact_email.input-xlarge(name='contact_email', type='email', placeholder='Enter Email', required)
+                .control-group
+                  label.control-label(for='contact_message') Message
+                  .controls
+                    textarea#contact_message(name='contact_message', placeholder='Enter Message', required)
+              .modal-footer
+                .control-group
+                  label.control-label(for='submit')
+                  .controls
+                    button#submit.btn.btn-default(name='submit') Send
+                    
+      -->
+    </main>
+    <footer class="container"><a href="#" class="fa fa-arrow-up toTop"></a>
+      <!--mixin author(authorName)
+      - var author = contents.authors[authorName + '.json']
+      span.author
+        if author
+          a(href='mailto:'+author.metadata.email)= author.metadata.name
+        else
+          =authorName
+          
+      -->
+      <!--mixin postThumb(post)
+      a(href!=post.url)
+        div.post.post-dimension
+          div.post-thumbnail.tint.post-dimension
+            img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+          p.post-title= post.title
+          div.post-lower-section
+            div.post-line-left
+            div#post-date-wrap
+              p.post-date= post.date
+                span.fycon-conversation.post-comment
+                span.post-comment-count
+                  span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+            div.post-line-right
+            
+            
+      -->
+      <!--mixin headSlider(title, imgUrl)
+      section#home.full-screen
+        div#slider
+          nav.slides-navigation
+          a.prev(href='#')
+          a.next(href='#')
+          ul.slides-container
+            li
+              div.image-caption
+                div.inner
+                  h2.bigtext.strtoupper.nomargin title
+              div.fullscreen-img(style='background-image: ' + imgUrl)
+              
+              
+      -->
+      <!--mixin postModal(post)
+      // CSS Rules?
+      .modal-header
+        header
+          h2!= typogr(page.title).typogrify()
+          p.post-date
+            i.fa.fa-calendar
+            span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      .modal-body
+        article.post-content!= typogr(page.html).typogrify()
+        .divider
+        
+        
+      -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6 text-center">
+                <div class="social"><a href="//www.github.com/joao-s-martins" class="fa fa-fw fa-github"></a><a href="//www.facebook.com/joao.martins.9440" class="fa fa-fw fa-facebook"></a><a href="//www.twitter.com/1906/joao" class="fa fa-fw fa-twitter"></a><a href="//www.linkedin.com/pub/john-martins/2/26a/49a" class="fa fa-fw fa-linkedin"></a></div>
+                <!--end .social-->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center">
+          <div class="copyright">Joao S. Martins<br></br>2014 © All Rights Reserved.<br></br>&copy; 2014, Joao Sousa Martins &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></div>
+          <!--end .copyright-->
+        </div>
+      </div>
+    </footer>
+    <script src="js/default.js"></script>
+  </body>
+</html>

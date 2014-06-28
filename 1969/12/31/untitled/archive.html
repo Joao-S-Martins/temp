@@ -1,0 +1,234 @@
+
+<!--mixin author(authorName)
+- var author = contents.authors[authorName + '.json']
+span.author
+  if author
+    a(href='mailto:'+author.metadata.email)= author.metadata.name
+  else
+    =authorName
+    
+-->
+<!--mixin postThumb(post)
+a(href!=post.url)
+  div.post.post-dimension
+    div.post-thumbnail.tint.post-dimension
+      img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+    p.post-title= post.title
+    div.post-lower-section
+      div.post-line-left
+      div#post-date-wrap
+        p.post-date= post.date
+          span.fycon-conversation.post-comment
+          span.post-comment-count
+            span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+      div.post-line-right
+      
+      
+-->
+<!--mixin headSlider(title, imgUrl)
+section#home.full-screen
+  div#slider
+    nav.slides-navigation
+    a.prev(href='#')
+    a.next(href='#')
+    ul.slides-container
+      li
+        div.image-caption
+          div.inner
+            h2.bigtext.strtoupper.nomargin title
+        div.fullscreen-img(style='background-image: ' + imgUrl)
+        
+        
+-->
+<!--mixin postModal(post)
+// CSS Rules?
+.modal-header
+  header
+    h2!= typogr(page.title).typogrify()
+    p.post-date
+      i.fa.fa-calendar
+      span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+.modal-body
+  article.post-content!= typogr(page.html).typogrify()
+  .divider
+  
+  
+--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Joao's Life Journal - Myself, for my future generations - Joao.io
+    </title>
+    <!--link(rel='alternate', href='http://feeds.feedburner.com/slowtheory', type='application/rss+xml', title=locals.description)-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/media/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/media/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/media/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/media/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/assets/media/favicon.ico">
+    <!-- build:[href] /styles/main.min.css -->
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" media="screen, projection, print">
+    <!-- /build -->
+    <style>
+      body {
+        letter-spacing: 0.065em;
+      }
+      #blog figure img {
+        width: auto;
+      }
+      
+    </style>
+    <!-- build:[src] js/compiled.js-->
+    <script src="js/bundled.js"></script>
+    <!-- /build -->
+  </head>
+  <body>
+    <header class="splash">
+      <div class="transparency"></div>
+      <div class="container">
+        <h1>Joao's Life Journal
+        </h1>
+        <h2 class="text-center">Myself, for my future generations
+        </h2>
+      </div>
+    </header>
+    <!--end .splash-->
+    <nav role="navigation" class="navbar navbar-inverse">
+      <div class="container">
+        <div id="menu" role="navigation" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Categories</a></li>
+            <li><a href="/">Résumé</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end .navbar-->
+    <!--block modal
+    .modal.fade.content
+      .modal-dialog
+        .modal-content
+        
+    -->
+    <main class="container">
+      <section class="archive">
+        <h2>Archive</h2>
+        <ul>
+          <li><span style="line-height:6.6000000000000005em" class="year-label">2013</span>
+            <ul style="margin-left:4em">
+              <li><span style="line-height:6.6000000000000005em" class="month-label">April</span>
+                <ul style="margin-left:7em">
+                  <li style="height:2.2em;line-height:2.2em;"><a href="/2013/04/12/review-purple-squirrel-by-michael-b-junge/">Review: Purple Squirrel by Michael B. Junge</a></li>
+                  <li style="height:2.2em;line-height:2.2em;"><a href="/2013/04/06/review-the-passionate-programmer-by-chad-fowler/">Review: The Passionate Programmer by Chad Fowler</a></li>
+                  <li style="height:2.2em;line-height:2.2em;"><a href="/2013/04/03/apple-pie-moonshine-recipe/">Apple Pie Moonshine Recipe</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!--.modal.fade.contact-modal
+      .modal-dialog.modal-sm
+        .modal-content
+          form.form-horizontal
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h2 Contact me
+            .modal-body
+              fieldset
+                .control-group
+                  label.control-label(for='contact_name') Name
+                  .controls
+                    input#contact_name.input-xlarge(name='contact_name', type='text', placeholder='Enter Name', required)
+                .control-group
+                  label.control-label(for='contact_email') Email
+                  .controls
+                    input#contact_email.input-xlarge(name='contact_email', type='email', placeholder='Enter Email', required)
+                .control-group
+                  label.control-label(for='contact_message') Message
+                  .controls
+                    textarea#contact_message(name='contact_message', placeholder='Enter Message', required)
+              .modal-footer
+                .control-group
+                  label.control-label(for='submit')
+                  .controls
+                    button#submit.btn.btn-default(name='submit') Send
+                    
+      -->
+    </main>
+    <footer class="container"><a href="#" class="fa fa-arrow-up toTop"></a>
+      <!--mixin author(authorName)
+      - var author = contents.authors[authorName + '.json']
+      span.author
+        if author
+          a(href='mailto:'+author.metadata.email)= author.metadata.name
+        else
+          =authorName
+          
+      -->
+      <!--mixin postThumb(post)
+      a(href!=post.url)
+        div.post.post-dimension
+          div.post-thumbnail.tint.post-dimension
+            img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+          p.post-title= post.title
+          div.post-lower-section
+            div.post-line-left
+            div#post-date-wrap
+              p.post-date= post.date
+                span.fycon-conversation.post-comment
+                span.post-comment-count
+                  span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+            div.post-line-right
+            
+            
+      -->
+      <!--mixin headSlider(title, imgUrl)
+      section#home.full-screen
+        div#slider
+          nav.slides-navigation
+          a.prev(href='#')
+          a.next(href='#')
+          ul.slides-container
+            li
+              div.image-caption
+                div.inner
+                  h2.bigtext.strtoupper.nomargin title
+              div.fullscreen-img(style='background-image: ' + imgUrl)
+              
+              
+      -->
+      <!--mixin postModal(post)
+      // CSS Rules?
+      .modal-header
+        header
+          h2!= typogr(page.title).typogrify()
+          p.post-date
+            i.fa.fa-calendar
+            span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      .modal-body
+        article.post-content!= typogr(page.html).typogrify()
+        .divider
+        
+        
+      -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6 text-center">
+                <div class="social"><a href="//www.github.com/joao-s-martins" class="fa fa-fw fa-github"></a><a href="//www.facebook.com/joao.martins.9440" class="fa fa-fw fa-facebook"></a><a href="//www.twitter.com/1906/joao" class="fa fa-fw fa-twitter"></a><a href="//www.linkedin.com/pub/john-martins/2/26a/49a" class="fa fa-fw fa-linkedin"></a></div>
+                <!--end .social-->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center">
+          <div class="copyright">Joao S. Martins<br></br>2014 © All Rights Reserved.<br></br>&copy; 2014, Joao Sousa Martins &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></div>
+          <!--end .copyright-->
+        </div>
+      </div>
+    </footer>
+    <script src="js/default.js"></script>
+  </body>
+</html>

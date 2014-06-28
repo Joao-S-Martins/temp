@@ -1,0 +1,246 @@
+
+<!--mixin author(authorName)
+- var author = contents.authors[authorName + '.json']
+span.author
+  if author
+    a(href='mailto:'+author.metadata.email)= author.metadata.name
+  else
+    =authorName
+    
+-->
+<!--mixin postThumb(post)
+a(href!=post.url)
+  div.post.post-dimension
+    div.post-thumbnail.tint.post-dimension
+      img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+    p.post-title= post.title
+    div.post-lower-section
+      div.post-line-left
+      div#post-date-wrap
+        p.post-date= post.date
+          span.fycon-conversation.post-comment
+          span.post-comment-count
+            span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+      div.post-line-right
+      
+      
+-->
+<!--mixin headSlider(title, imgUrl)
+section#home.full-screen
+  div#slider
+    nav.slides-navigation
+    a.prev(href='#')
+    a.next(href='#')
+    ul.slides-container
+      li
+        div.image-caption
+          div.inner
+            h2.bigtext.strtoupper.nomargin title
+        div.fullscreen-img(style='background-image: ' + imgUrl)
+        
+        
+-->
+<!--mixin postModal(post)
+// CSS Rules?
+.modal-header
+  header
+    h2!= typogr(page.title).typogrify()
+    p.post-date
+      i.fa.fa-calendar
+      span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+.modal-body
+  article.post-content!= typogr(page.html).typogrify()
+  .divider
+  
+  
+--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Review: Purple Squirrel by Michael B. Junge - Joao's Life Journal - Myself, for my future generations - Joao.io
+    </title>
+    <!--link(rel='alternate', href='http://feeds.feedburner.com/slowtheory', type='application/rss+xml', title=locals.description)-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/media/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/media/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/media/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/media/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/assets/media/favicon.ico">
+    <!-- build:[href] /styles/main.min.css -->
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" media="screen, projection, print">
+    <!-- /build -->
+    <style>
+      body {
+        letter-spacing: 0.065em;
+      }
+      #blog figure img {
+        width: auto;
+      }
+      
+    </style>
+    <!-- build:[src] js/compiled.js-->
+    <script src="js/bundled.js"></script>
+    <!-- /build -->
+  </head>
+  <body>
+    <header class="splash">
+      <div class="transparency"></div>
+      <div class="container">
+        <h1>Joao's Life Journal
+        </h1>
+        <h2 class="text-center">Myself, for my future generations
+        </h2>
+      </div>
+    </header>
+    <!--end .splash-->
+    <nav role="navigation" class="navbar navbar-inverse">
+      <div class="container">
+        <div id="menu" role="navigation" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Categories</a></li>
+            <li><a href="/">Résumé</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end .navbar-->
+    <!--block modal
+    .modal.fade.content
+      .modal-dialog
+        .modal-content
+        
+    -->
+    <main class="container">
+      <section class="content row">
+        <!--article.col-xs-12.col-md-8-->
+        <article class="col-xs-12">
+          <header>
+            <h3>Review: Purple Squirrel by Michael B.&nbsp;Junge</h3>
+            <p class="post-date"><i class="fa fa-calendar"></i><span style="margin-left:10px">April 12th, 2013</span>
+            </p>
+          </header>
+          <div class="post-content"><p><img src="/posts/2013-04-12_1/splash.jpg" alt="Cover image of Purple Squirrel by Michael B. Junge" title="Purple Squirrel by Michael B. Junge"></p>
+<p>Purple Squirrel by Michael B.&nbsp;Junge.</p>
+<p><span class="more-2"></span></p>
+<p>Whether you’re in the process of a new job search now, planning a search soon, or aren’t planning a job change in the foreseeable future, you should take a look at this book. So, yeah; basically, everybody who hasn’t already established concrete retirement plans could benefit from this&nbsp;book.</p>
+<p><em>The first section</em> of Purple Squirrel is something of a self help book. The author discusses setting goals and having the drive to complete them. I did the exercises that were recommended and am extremely happy that I did. The exercises were simple and had me feeling grounded and properly oriented at a time of career&nbsp;uncertainty.</p>
+<p><em>The second section</em> is a lengthy and detailed set of instructions for conducting a successful job search that utilizes modern technology and recruiting practices, which goes well beyond just utilizing job-post websites! This section describes how to research your expected salary, draft resumes tailored for the search tools used by recruiters and hiring managers, prepare for an interview, negotiate a job offer, and all the important points in&nbsp;between.</p>
+<p><em>The third and final section</em> of this book is a guide to making yourself a more marketable asset, keeping yourself prepared for your next job search and maybe even becoming a magnet for unsolicited job offers. The skills described in this section are universal and apply to any industry. These are skills such and public speaking, keeping a record of accomplishments, networking, and other things you should do to stay sharp and remain an ideal candidate for future job&nbsp;opportunities.</p>
+<p>Even though I’ve been very familiar with online job search tools since I was in high school, I found this book to be very helpful and incredibly insightful during my last job search. I continue to work on the skills described in the third section to ensure that I remain prepared for my next job search. My favorite thing about this book is the detail put into the action items. After each of the many lessons that this book teaches, there are detailed action items to help the reader to apply the lessons immediately. This book tends to assume that the reader already has work experience, which isn’t ideal for college students, new grads, and people choosing to completely change careers. That said, I would still recommend this book to them as a guide to help them begin recording their accomplishments and build a portfolio and skill-set that could be utilized in their next job&nbsp;search.</p>
+<p><a href="http://wordpress.redirectingat.com/?id=725X584219&amp;site=jewow.wordpress.com&amp;xs=1&amp;isjs=1&amp;url=http%3A%2F%2Fwww.amazon.com%2FPurple-Squirrel-Interviews-Master-Modern%2Fdp%2F1467992607%2Fref%3Dsr_1_1%3Fie%3DUTF8%26qid%3D1365627253%26sr%3D8-1%26keywords%3Dpurple%2Bsquirrel&amp;xguid=76d23e84e3b61bba9f7734e868be6e73&amp;xcreo=0&amp;xed=0&amp;sref=http%3A%2F%2Fjewow.wordpress.com%2F2013%2F04%2F12%2Freview-purple-squirrel-by-michael-b-junge%2F%23more-40&amp;pref=http%3A%2F%2Fjewow.wordpress.com%2F&amp;xtz=420" title="Purple Squirrel by Michael B. Junge">Amazon</a><br><span class="caps">ISBN</span>-10: 1467992607<br><span class="caps">ISBN</span>-13: 978-1467992602</p>
+</div>
+        </article>
+        <!--aside.col-xs-12.col-md-4| aside stuff
+        -->
+      </section>
+      <div class="row">
+        <ul class="pager text-center">
+          <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Previous post</a></li>
+          <li class="disabled next col-xs-6"><a>Next post <i class="fa fa-angle-double-right"></i></a></li>
+        </ul>
+      </div>
+      <!--.modal.fade.contact-modal
+      .modal-dialog.modal-sm
+        .modal-content
+          form.form-horizontal
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h2 Contact me
+            .modal-body
+              fieldset
+                .control-group
+                  label.control-label(for='contact_name') Name
+                  .controls
+                    input#contact_name.input-xlarge(name='contact_name', type='text', placeholder='Enter Name', required)
+                .control-group
+                  label.control-label(for='contact_email') Email
+                  .controls
+                    input#contact_email.input-xlarge(name='contact_email', type='email', placeholder='Enter Email', required)
+                .control-group
+                  label.control-label(for='contact_message') Message
+                  .controls
+                    textarea#contact_message(name='contact_message', placeholder='Enter Message', required)
+              .modal-footer
+                .control-group
+                  label.control-label(for='submit')
+                  .controls
+                    button#submit.btn.btn-default(name='submit') Send
+                    
+      -->
+    </main>
+    <footer class="container"><a href="#" class="fa fa-arrow-up toTop"></a>
+      <!--mixin author(authorName)
+      - var author = contents.authors[authorName + '.json']
+      span.author
+        if author
+          a(href='mailto:'+author.metadata.email)= author.metadata.name
+        else
+          =authorName
+          
+      -->
+      <!--mixin postThumb(post)
+      a(href!=post.url)
+        div.post.post-dimension
+          div.post-thumbnail.tint.post-dimension
+            img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+          p.post-title= post.title
+          div.post-lower-section
+            div.post-line-left
+            div#post-date-wrap
+              p.post-date= post.date
+                span.fycon-conversation.post-comment
+                span.post-comment-count
+                  span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+            div.post-line-right
+            
+            
+      -->
+      <!--mixin headSlider(title, imgUrl)
+      section#home.full-screen
+        div#slider
+          nav.slides-navigation
+          a.prev(href='#')
+          a.next(href='#')
+          ul.slides-container
+            li
+              div.image-caption
+                div.inner
+                  h2.bigtext.strtoupper.nomargin title
+              div.fullscreen-img(style='background-image: ' + imgUrl)
+              
+              
+      -->
+      <!--mixin postModal(post)
+      // CSS Rules?
+      .modal-header
+        header
+          h2!= typogr(page.title).typogrify()
+          p.post-date
+            i.fa.fa-calendar
+            span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+      .modal-body
+        article.post-content!= typogr(page.html).typogrify()
+        .divider
+        
+        
+      -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6 text-center">
+                <div class="social"><a href="//www.github.com/joao-s-martins" class="fa fa-fw fa-github"></a><a href="//www.facebook.com/joao.martins.9440" class="fa fa-fw fa-facebook"></a><a href="//www.twitter.com/1906/joao" class="fa fa-fw fa-twitter"></a><a href="//www.linkedin.com/pub/john-martins/2/26a/49a" class="fa fa-fw fa-linkedin"></a></div>
+                <!--end .social-->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center">
+          <div class="copyright">Joao S. Martins<br></br>2014 © All Rights Reserved.<br></br>&copy; 2014, Joao Sousa Martins &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></div>
+          <!--end .copyright-->
+        </div>
+      </div>
+    </footer>
+    <script src="js/default.js"></script>
+  </body>
+</html>

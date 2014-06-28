@@ -1,0 +1,7 @@
+build/*
+node_modules/*
+contents/maintenance/maintenance.json
+templates/maintenance.html
+.grunt/*
+www.slow*
+.DS_Store

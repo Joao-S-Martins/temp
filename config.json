@@ -1,0 +1,34 @@
+{
+  "locals": {
+    "url": "Joao.io",
+    "name": "Joao's Life Journal",
+    "owner": "Joao Sousa Martins",
+    "description": "Myself, for my future generations"
+  },
+  "plugins": [
+    "./plugins/helpers.js",
+    "./plugins/paginator.js",
+    "wintersmith-less",
+    "wintersmith-browserify"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "hostname": "localhost",
+  "port": "4748",
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 6,
+    "articles": "posts",
+    "template": "blog.jade"
+  },
+  "filenameTemplate": "/:year/:month/:day/:title/:file.html"
+}

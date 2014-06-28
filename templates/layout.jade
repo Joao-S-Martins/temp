@@ -1,0 +1,108 @@
+include mixins
+doctype html
+block vars
+  - var bodyclass = null;
+  - arrTitle = [locals.name, locals.description, locals.url];
+html(lang='en')
+  head
+    block head
+      include includes/meta
+      title
+        block title
+          = [locals.name, locals.description, locals.url].join(' - ')
+
+      //link(rel='alternate', href='http://feeds.feedburner.com/slowtheory', type='application/rss+xml', title=locals.description)
+      include includes/favicon
+
+      block styles
+        // build:[href] /styles/main.min.css 
+        link(rel='stylesheet', href='/styles/main.css', type='text/css', media='screen, projection, print')
+        // /build 
+        style.
+          body {
+            letter-spacing: 0.065em;
+          }
+          #blog figure img {
+            width: auto;
+          }
+
+      block scripts
+        // build:[src] js/compiled.js
+        script(src='js/bundled.js')
+        // /build 
+  body(class=bodyclass)
+    block splash
+      +Splash('', locals.name, locals.description)
+
+    +SiteMenu('menu', [])
+
+    //- Modal window for posts
+    //block modal
+      .modal.fade.content
+        .modal-dialog
+          .modal-content
+
+    main.container
+      block header
+      block content
+        
+
+
+          //.right.col-md-3
+            //- Recent blog posts
+            .widget
+              h3 Recent Posts
+              ul.recent-posts
+                //each article in contents.preview.articles
+                  li
+                    a(href='#id='+encodeURIComponent(article.url))
+                      i.fa.fa-sign-out
+                      = article.title
+                    small= moment.utc(article.date).format('DD MMM YYYY')
+
+            //- Recent trovebox photos
+            .widget
+              h3 Recent Photos
+              //each photo in tb.result
+                a.popup-image.thumb(href=photo.path1024x1024)
+                  - photo.description = (photo.description === null) ? photo.path1024x1024:photo.description
+                  img(src=photo.path200x200xCR, alt=photo.description)
+            .clearfix
+
+
+      //- Modal window for contact form
+      //.modal.fade.contact-modal
+        .modal-dialog.modal-sm
+          .modal-content
+            form.form-horizontal
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                h2 Contact me
+              .modal-body
+                fieldset
+                  .control-group
+                    label.control-label(for='contact_name') Name
+                    .controls
+                      input#contact_name.input-xlarge(name='contact_name', type='text', placeholder='Enter Name', required)
+                  .control-group
+                    label.control-label(for='contact_email') Email
+                    .controls
+                      input#contact_email.input-xlarge(name='contact_email', type='email', placeholder='Enter Email', required)
+                  .control-group
+                    label.control-label(for='contact_message') Message
+                    .controls
+                      textarea#contact_message(name='contact_message', placeholder='Enter Message', required)
+                .modal-footer
+                  .control-group
+                    label.control-label(for='submit')
+                    .controls
+                      button#submit.btn.btn-default(name='submit') Send
+
+    //- Footer
+    footer.container
+      a.fa.fa-arrow-up.toTop(href='#')
+      include includes/footer
+
+    //- Load javascript
+    block bodyscripts
+      script(src='js/default.js')

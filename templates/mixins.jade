@@ -1,0 +1,196 @@
+//mixin author(authorName)
+  - var author = contents.authors[authorName + '.json']
+  span.author
+    if author
+      a(href='mailto:'+author.metadata.email)= author.metadata.name
+    else
+      =authorName
+
+//mixin postThumb(post)
+  a(href!=post.url)
+    div.post.post-dimension
+      div.post-thumbnail.tint.post-dimension
+        img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+      p.post-title= post.title
+      div.post-lower-section
+        div.post-line-left
+        div#post-date-wrap
+          p.post-date= post.date
+            span.fycon-conversation.post-comment
+            span.post-comment-count
+              span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+        div.post-line-right
+
+
+//mixin headSlider(title, imgUrl)
+  section#home.full-screen
+    div#slider
+      nav.slides-navigation
+      a.prev(href='#')
+      a.next(href='#')
+      ul.slides-container
+        li
+          div.image-caption
+            div.inner
+              h2.bigtext.strtoupper.nomargin title
+          div.fullscreen-img(style='background-image: ' + imgUrl)
+
+
+//mixin postModal(post)
+  // CSS Rules?
+  .modal-header
+    header
+      h2!= typogr(page.title).typogrify()
+      p.post-date
+        i.fa.fa-calendar
+        span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+  .modal-body
+    article.post-content!= typogr(page.html).typogrify()
+    .divider
+
+
+mixin feed(posts)
+  doctype xml
+  rss(version='2.0',
+    xmlns:content='http://purl.org/rss/1.0/modules/content/',
+    xmlns:wfw='http://wellformedweb.org/CommentAPI/',
+    xmlns:dc='http://purl.org/dc/elements/1.1/'
+    xmlns:atom='http://www.w3.org/2005/Atom')
+    channel
+      title= locals.name
+      atom:link(href=locals.url + '/feed.xml', rel='self', type='application/rss+xml')
+      link= locals.url
+      description= locals.description
+      pubDate= posts[0].rfc822date
+      generator Wintersmith - https://github.com/jnordberg/wintersmith
+      language en
+      for post in posts
+        - var permalink = locals.url + post.url
+        item
+          title= post.title
+          link= permalink
+          pubDate= post.rfc822date
+          guid(isPermaLink='true')= permalink
+          author= post.author
+          //- passing locals.url resolves all relative urls to absolute
+          description= post.getHtml(locals.url)
+
+mixin Splash(image, title, subtitle)
+  header.splash
+    .transparency
+    .container
+      if title
+        h1
+          = title
+      if subtitle
+        h2.text-center
+          = subtitle
+  //end .splash
+
+mixin NavbarToggle(target)
+  button.navbar-toggle(type='button', data-toggle='collapse', data-target=target)
+    span.sr-only Toggle navigation
+    span.icon-bar
+    span.icon-bar
+    span.icon-bar
+  //end .navbar-toggle
+
+mixin MenuLink(text, link)
+  li: a(href=link)= text
+
+mixin SiteMenu(id, classes)
+  nav.navbar.navbar-inverse(role='navigation')
+    .container
+      .collapse.navbar-collapse(id=id, role='navigation')
+        - cls = ['nav', 'navbar-nav']
+        - if (classes)
+        -   cls = cls.concat(classes)
+        ul(class=cls.join(' '))
+          +MenuLink('Home', '/')
+          +MenuLink('Categories', '/')
+          +MenuLink('Résumé', '/')
+          +MenuLink('Contact', '/')
+          +MenuLink('Newsletter', '/')
+  //end .navbar
+
+mixin About()
+  article.about.col-xs-12.col-md-8.col-md-push-2.col-lg-6.col-lg-push-3
+    h1 About me
+    p.
+      I'm a software engineer working in San Francisco.
+    +SocialLinks()
+  //end .about
+
+mixin PostThumb(post)
+  //- splashUrl = '/posts/2013-04-03_1/splash.jpg'
+  - splashUrl = post.metadata.photo
+  article.item.col-xs-12.col-sm-6.col-lg-4
+    div.item-veil(style='background-image:url('+ splashUrl +');')
+      //-'#id='+encodeURIComponent(post.url)
+      - mmt = moment(post.date)
+      a.item-thumb(href=post.url, style='background-image:url('+ post.url + post.metadata.photo +')')
+        h3.item-title!= typogr(post.title).typogrify()
+        - var preview = post.intro
+        - var preview = (typeof(preview) == 'string') ? preview.replace(/(<([^>]+)>)/ig,""):''
+        - var preview = (typeof(preview) == 'string') ? typogr(preview.substring(0,600)).typogrify():''
+        - var preview = (typeof(preview) == 'string') ? preview.substring(0,preview.lastIndexOf(".")+1):''
+        p.hide(aria-hidden='true')!= preview
+        .item-lower-section
+          .item-line-left
+          .item-lower-wrap
+            time.item-date= env.helpers.utils.formatDate(mmt)
+            |  · 
+            span.fa.fa-comments-o.item-comment
+            span.item-comment-count.livefyre-commentcount(data-post-id!=post.id)!= post.metadata.commentCount || 0
+          .item-line-right
+
+
+mixin Paginator(type, prevPage, nextPage)
+    ul.pager.text-center
+      if prevPage
+        li.previous.col-xs-6
+          a(href=prevPage.url+'#blog', title='Newer Posts')
+            i.fa.fa-angle-double-left
+            |  Previous
+            if type
+              = ' ' + type
+      else
+        li.previous.disabled.col-xs-6
+          a
+            i.fa.fa-angle-double-left
+            |  Previous
+            if type
+              = ' ' + type
+      if nextPage
+        li.next.col-xs-6
+          a(href=nextPage.url+'#blog', title='Older Posts')
+            | Next
+            if type
+              = ' ' + type + ' '
+            i.fa.fa-angle-double-right
+      else
+        li.disabled.next.col-xs-6
+          a
+            | Next
+            if type
+              = ' ' + type + ' '
+            i.fa.fa-angle-double-right
+
+mixin SocialLinks()
+  .social
+    a.fa.fa-fw.fa-github(href="//www.github.com/joao-s-martins")
+    a.fa.fa-fw.fa-facebook(href='//www.facebook.com/joao.martins.9440')
+    a.fa.fa-fw.fa-twitter(href='//www.twitter.com/1906/joao')
+    a.fa.fa-fw.fa-linkedin(href='//www.linkedin.com/pub/john-martins/2/26a/49a')
+  //end .social
+
+mixin Copyright()
+  .copyright
+    | Joao S. Martins
+    br
+    | 2014 © All Rights Reserved.
+    br
+    | &copy; #{ new Date().getFullYear() }, #{ locals.owner } &mdash; powered by&nbsp;
+    a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+  //end .copyright

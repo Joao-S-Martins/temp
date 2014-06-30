@@ -85,13 +85,14 @@ section#home.full-screen
     <!-- /build -->
   </head>
   <body>
-    <header class="splash">
-      <div class="transparency"></div>
-      <div class="container">
-        <h1>Joao's Life Journal
-        </h1>
-        <h2 class="text-center">Myself, for my future generations
-        </h2>
+    <header style="background-image:url()" class="splash">
+      <div class="transparency">
+        <div class="container">
+          <h1>Joao's Life Journal
+          </h1>
+          <h2 class="text-center">Myself, for my future generations
+          </h2>
+        </div>
       </div>
     </header>
     <!--end .splash-->
@@ -102,6 +103,7 @@ section#home.full-screen
             <li><a href="/">Home</a></li>
             <li><a href="/">Categories</a></li>
             <li><a href="/">Résumé</a></li>
+            <li><a href="/">Projects</a></li>
             <li><a href="/">Contact</a></li>
             <li><a href="/">Newsletter</a></li>
           </ul>
@@ -118,8 +120,11 @@ section#home.full-screen
     <main class="container">
       <div class="row">
         <article class="about col-xs-12 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3">
-          <h1>About me</h1>
-          <p>I'm a software engineer working in San Francisco.</p>
+          <h1>About me</h1><img src="http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?s=160" class="pull-left"></img>
+          <!--img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=wavatar&s=160&f=y')-->
+          <!--img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=identicon&s=160&f=y')-->
+          <!--img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=monsterid&s=160&f=y')-->
+          <p class="pull-right">I'm a software engineer working in San Francisco.</p>
           <div class="social"><a href="//www.github.com/joao-s-martins" class="fa fa-fw fa-github"></a><a href="//www.facebook.com/joao.martins.9440" class="fa fa-fw fa-facebook"></a><a href="//www.twitter.com/1906/joao" class="fa fa-fw fa-twitter"></a><a href="//www.linkedin.com/pub/john-martins/2/26a/49a" class="fa fa-fw fa-linkedin"></a></div>
           <!--end .social-->
         </article>
@@ -129,7 +134,7 @@ section#home.full-screen
         <div class="col-xs-12">
           <div class="row">
             <article class="item col-xs-12 col-sm-6 col-lg-4">
-              <div style="background-image:url(/posts/2013-04-12_1/splash.jpg);" class="item-veil"><a href="/2013/04/12/review-purple-squirrel-by-michael-b-junge/" style="background-image:url(/2013/04/12/review-purple-squirrel-by-michael-b-junge//posts/2013-04-12_1/splash.jpg)" class="item-thumb">
+              <div style="background-image:url(temp//posts/2013-04-12_1/splash.jpg);" class="item-veil"><a href="/2013/04/12/review-purple-squirrel-by-michael-b-junge/" class="item-thumb">
                   <h3 class="item-title">Review: Purple Squirrel by Michael B.&nbsp;Junge</h3>
                   <p aria-hidden="true" class="hide">
 Purple Squirrel by Michael B. Junge.</p>
@@ -143,7 +148,7 @@ Purple Squirrel by Michael B. Junge.</p>
               </div>
             </article>
             <article class="item col-xs-12 col-sm-6 col-lg-4">
-              <div style="background-image:url(/posts/2013-04-06_1/splash.jpg);" class="item-veil"><a href="/2013/04/06/review-the-passionate-programmer-by-chad-fowler/" style="background-image:url(/2013/04/06/review-the-passionate-programmer-by-chad-fowler//posts/2013-04-06_1/splash.jpg)" class="item-thumb">
+              <div style="background-image:url(temp//posts/2013-04-06_1/splash.jpg);" class="item-veil"><a href="/2013/04/06/review-the-passionate-programmer-by-chad-fowler/" class="item-thumb">
                   <h3 class="item-title">Review: The Passionate Programmer by Chad&nbsp;Fowler</h3>
                   <p aria-hidden="true" class="hide">
 The Passionate Programmer by Chad Fowler.</p>
@@ -157,9 +162,8 @@ The Passionate Programmer by Chad Fowler.</p>
               </div>
             </article>
             <article class="item col-xs-12 col-sm-6 col-lg-4">
-              <div style="background-image:url(/posts/2013-04-03_1/splash.jpg);" class="item-veil"><a href="/2013/04/03/apple-pie-moonshine-recipe/" style="background-image:url(/2013/04/03/apple-pie-moonshine-recipe//posts/2013-04-03_1/splash.jpg)" class="item-thumb">
+              <div style="background-image:url(temp//posts/2013-04-03_1/splash.jpg);" class="item-veil"><a href="/2013/04/03/apple-pie-moonshine-recipe/" class="item-thumb">
                   <h3 class="item-title">Apple Pie Moonshine&nbsp;Recipe</h3>
-                  <p aria-hidden="true" class="hide"></p>
                   <div class="item-lower-section">
                     <div class="item-line-left"></div>
                     <div class="item-lower-wrap">
@@ -172,8 +176,8 @@ The Passionate Programmer by Chad Fowler.</p>
           </div>
           <div class="row">
             <ul class="pager text-center">
-              <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Previous page</a></li>
-              <li class="disabled next col-xs-6"><a>Next page <i class="fa fa-angle-double-right"></i></a></li>
+              <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Newer posts</a></li>
+              <li class="disabled next col-xs-6"><a>Older posts <i class="fa fa-angle-double-right"></i></a></li>
             </ul>
           </div>
         </div>

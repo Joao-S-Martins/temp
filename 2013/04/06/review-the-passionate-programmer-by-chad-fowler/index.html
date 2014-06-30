@@ -69,6 +69,7 @@ section#home.full-screen
     <link rel="apple-touch-icon-precomposed" href="/assets/media/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="/assets/media/favicon.ico">
     <!-- build:[href] /styles/main.min.css -->
+    <!-- build:staging[href] /temp/styles/main.min.css -->
     <link rel="stylesheet" href="/temp/styles/main.css" type="text/css" media="screen, projection, print">
     <!-- /build -->
     <!-- build:[src] js/compiled.js-->
@@ -76,13 +77,15 @@ section#home.full-screen
     <!-- /build -->
   </head>
   <body>
-    <header class="splash">
-      <div class="transparency"></div>
-      <div class="container">
-        <h1>Joao's Life Journal
-        </h1>
-        <h2 class="text-center">Myself, for my future generations
-        </h2>
+    <header style="background-image:url(/temp/posts/2013-04-06_1/splash.jpg)" class="splash">
+      <div class="transparency">
+        <div class="container">
+          <h1>Review: The Passionate Programmer by Chad Fowler
+          </h1>
+          <h2 class="text-center">
+The Passionate Programmer by Chad Fowler.
+          </h2>
+        </div>
       </div>
     </header>
     <!--end .splash-->
@@ -93,6 +96,7 @@ section#home.full-screen
             <li><a href="/">Home</a></li>
             <li><a href="/">Categories</a></li>
             <li><a href="/">Résumé</a></li>
+            <li><a href="/">Projects</a></li>
             <li><a href="/">Contact</a></li>
             <li><a href="/">Newsletter</a></li>
           </ul>
@@ -132,8 +136,8 @@ I would highly recommend this book to anyone just starting a career in software 
       </section>
       <div class="row">
         <ul class="pager text-center">
-          <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Previous post</a></li>
-          <li class="disabled next col-xs-6"><a>Next post <i class="fa fa-angle-double-right"></i></a></li>
+          <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Newer post</a></li>
+          <li class="disabled next col-xs-6"><a>Older post <i class="fa fa-angle-double-right"></i></a></li>
         </ul>
       </div>
       <!--.modal.fade.contact-modal

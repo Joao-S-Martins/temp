@@ -3885,6 +3885,14 @@ input[type="button"].btn-block {
 /**************************************/
 /*          Global                    */
 /**************************************/
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+main {
+  margin-top: -50px;
+}
 .transition-bg,
 a,
 a:hover,
@@ -5426,6 +5434,21 @@ section ul li {
   border-color: #55acee;
 }
 /**************************************/
+/*          Splash                    */
+/**************************************/
+.splash {
+  background-image: url(default.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.splash .transparency {
+  color: white;
+}
+/**************************************/
 /*          Menus                     */
 /**************************************/
 .navbar {
@@ -5435,6 +5458,7 @@ section ul li {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  top: -50px;
 }
 /**************************************/
 /*          Blog view                 */
@@ -5456,14 +5480,6 @@ section ul li {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid black;
-}
-.item-veil:after,
-.item-veil:before {
-  content: " ";
-  background-color: rgba(0, 0, 0, 0.55);
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 .item-thumb,
 .item-thumb:active,
@@ -5487,12 +5503,26 @@ section ul li {
   text-decoration: none;
 }
 .item-thumb:hover {
-  filter: alpha(opacity=55.00000000000001);
-  -webkit-opacity: 0.55;
-  -moz-opacity: 0.55;
-  opacity: 0.55;
+  filter: alpha(opacity=35);
+  -webkit-opacity: 0.35;
+  -moz-opacity: 0.35;
+  opacity: 0.35;
 }
-.item-title {
+.item-thumb:before,
+.splash:before {
+  content: " ";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.item-thumb h3 {
+  margin: 0;
+  position: absolute;
+}
+.item-title,
+.splash .transparency {
   font-size: 1.625em;
   line-height: 34px;
   font-weight: 600;
@@ -5500,7 +5530,7 @@ section ul li {
   padding-top: 15px;
   width: 100%;
   vertical-align: middle;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.45);
   background-clip: content-box;
 }
 .item-lower-section {
@@ -5508,7 +5538,7 @@ section ul li {
   width: 100%;
   bottom: 15px;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.45);
   background-clip: content-box;
 }
 .item-lower-wrap {

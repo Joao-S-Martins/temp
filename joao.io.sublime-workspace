@@ -4,16 +4,24 @@
 		"selected_items":
 		[
 			[
-				"stream",
-				"streamhub-permalink"
+				"in",
+				"includes"
 			],
 			[
-				"str",
-				"streamhub-sdk"
+				"text",
+				"text-center"
 			],
 			[
-				"mar",
-				"margin-top"
+				"so",
+				"social-color"
+			],
+			[
+				"item",
+				"item-thumb"
+			],
+			[
+				"ba",
+				"background"
 			],
 			[
 				"back",
@@ -21,263 +29,67 @@
 			],
 			[
 				"te",
-				"text-decoration"
+				"text-right"
 			],
 			[
-				"fet",
-				"_fetchPermalink"
+				"c",
+				"content"
 			],
 			[
-				"show",
-				"showShare"
+				"joao",
+				"joao-s-martins"
 			],
 			[
-				"_ren",
-				"_renderButtons"
+				"pad",
+				"padding-right"
 			],
 			[
-				"get",
-				"getElementById"
+				"ma",
+				"margin-bottom"
 			],
 			[
-				"_h",
-				"_handleShare"
+				"foot",
+				"footer-links"
 			],
 			[
-				"_han",
-				"_handleEvent"
+				"m",
+				"menu"
 			],
 			[
-				"_",
-				"_handleShare"
-			],
-			[
-				"popo",
-				"popoverSpy"
-			],
-			[
-				"can",
-				"canExecute"
-			],
-			[
-				"Sh",
-				"ShareCommand"
-			],
-			[
-				"st",
-				"streamhub-sdk"
-			],
-			[
-				"strea",
-				"streamhub-permalink"
-			],
-			[
-				"stre",
-				"streamhub-permalink"
-			],
-			[
-				"Sha",
-				"ShareMenu"
-			],
-			[
-				"font",
-				"font-family"
-			],
-			[
-				"cre",
-				"createElement"
-			],
-			[
-				"Comment",
-				"CommentController"
-			],
-			[
-				"content",
-				"contentView"
-			],
-			[
-				"COn",
-				"ContentViewFactory"
-			],
-			[
-				"Content",
-				"ContentViewFactory"
-			],
-			[
-				"u",
-				"uriInterpreter"
-			],
-			[
-				"pre",
-				"preventDefault"
-			],
-			[
-				"_ge",
-				"_generateDafaultHandler"
-			],
-			[
-				"us",
-				"userOptions"
-			],
-			[
-				"s",
-				"streamhub-sdk"
-			],
-			[
-				"auth",
-				"auth-delegates"
-			],
-			[
-				"au",
-				"authRequired"
-			],
-			[
-				"em",
-				"emptyTextString"
-			],
-			[
-				"bu",
-				"buildPostEventObj"
-			],
-			[
-				"stram",
-				"streamhub-wall"
-			],
-			[
-				"conten",
-				"content-list-view"
-			],
-			[
-				"emp",
-				"emptyTextString"
-			],
-			[
-				"jquery",
-				"jquery-placeholder"
-			],
-			[
-				"de",
-				"destroy"
-			],
-			[
-				"si",
-				"siteId"
-			],
-			[
-				"tex",
-				"text-transform"
-			],
-			[
-				"font-s",
-				"font-style"
-			],
-			[
-				"comment",
-				"comment-editor"
-			],
-			[
-				"proto",
-				"prototype"
-			],
-			[
-				"uplo",
-				"uploadInput"
+				"mar",
+				"margin-right"
 			],
 			[
 				"con",
 				"container"
 			],
 			[
-				"up",
-				"uploadOpts"
+				"itm",
+				"item-separator"
+			],
+			[
+				"fund",
+				"_fundraiserNote"
+			],
+			[
+				"L",
+				"Leandro"
+			],
+			[
+				"fun",
+				"fundraisers"
 			],
 			[
 				"pro",
 				"prototype"
 			],
 			[
-				"des",
-				"destination"
-			],
-			[
-				"Inp",
-				"InputCommand"
-			],
-			[
-				"b",
-				"body"
-			],
-			[
-				"test",
-				"testString"
-			],
-			[
-				"Inu",
-				"ModalInputCommand"
-			],
-			[
-				"commen",
-				"commentInput"
-			],
-			[
-				"comm",
-				"commentInput"
-			],
-			[
-				"Laun",
-				"LaunchableModal"
-			],
-			[
-				"In",
-				"ModalInputCommand"
-			],
-			[
-				"mo",
-				"modalTemplate"
-			],
-			[
-				"return",
-				"returnModal"
-			],
-			[
-				"call",
-				"called"
-			],
-			[
-				"cmd",
-				"cmdSpy"
-			],
-			[
-				"Inpu",
-				"InputButton"
-			],
-			[
-				"inpu",
-				"inputCommand"
-			],
-			[
-				"butt",
-				"Button"
-			],
-			[
-				"strem",
-				"streamhub-input"
-			],
-			[
 				"margin",
 				"margin-right"
 			],
 			[
-				"fun",
-				"function"
-			],
-			[
 				"padd",
 				"padding-bottom"
-			],
-			[
-				"ma",
-				"margin"
 			],
 			[
 				"head",
@@ -304,16 +116,24 @@
 				"letter-spacing"
 			],
 			[
+				"tex",
+				"text-decoration"
+			],
+			[
 				"fy",
 				"fyre-left"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
 				"hide",
 				"hideClones"
+			],
+			[
+				"show",
+				"showClones"
+			],
+			[
+				"font",
+				"font-size"
 			],
 			[
 				"qu",
@@ -330,10 +150,6 @@
 			[
 				"link",
 				"link"
-			],
-			[
-				"ba",
-				"background-color"
 			],
 			[
 				"bor",
@@ -372,10 +188,6 @@
 				"right-fluid"
 			],
 			[
-				"in",
-				"inline-block"
-			],
-			[
 				"border",
 				"border-bottom"
 			],
@@ -391,70 +203,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "templates/mixins.jade",
-			"settings":
-			{
-				"buffer_size": 2779,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config.json",
-			"settings":
-			{
-				"buffer_size": 542,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "node_modules/wintersmith/lib/plugins/page.js",
-			"settings":
-			{
-				"buffer_size": 6880,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/feed-all.jade",
-			"settings":
-			{
-				"buffer_size": 56,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "plugins/paginator.coffee",
-			"settings":
-			{
-				"buffer_size": 3072,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "www.slowtheory.com/node_modules/wintersmith-coffee/example/templates/index.jade",
-			"settings":
-			{
-				"buffer_size": 312,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "www.slowtheory.com/templates/feed.jade",
-			"settings":
-			{
-				"buffer_size": 976,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/index.jade",
-			"settings":
-			{
-				"buffer_size": 592,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -463,12 +211,8 @@
 		"selected_items":
 		[
 			[
-				"json",
-				"Set Syntax: JSON"
-			],
-			[
 				"",
-				"Set Syntax: JavaScript"
+				"Indentation: Reindent Lines"
 			]
 		],
 		"width": 392.0
@@ -488,134 +232,134 @@
 	},
 	"file_history":
 	[
-		"/Users/joaomartins/Documents/personal/dev/test/node_modules/wintersmith/node_modules/jade/jade.js",
-		"/Users/joaomartins/Documents/personal/dev/test/node_modules/moment/moment.js",
-		"/Users/joaomartins/Documents/personal/dev/test/node_modules/wintersmith/lib/core/content.js",
-		"/Users/joaomartins/Documents/personal/dev/test/www.slowtheory.com/node_modules/wintersmith/examples/blog/plugins/paginator.coffee",
-		"/Users/joaomartins/Documents/personal/dev/test/templates/feed-all.jade",
-		"/Users/joaomartins/Documents/personal/dev/test/package.json",
-		"/Users/joaomartins/Documents/personal/dev/test/www.slowtheory.com/config.json",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/config.json",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/package.json",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/Gruntfile.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/README.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/styles/raw.less",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/sardine-dinner-thanks/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/layout.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/mixins.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/styles/default.css",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/js/default.js",
+		"/Users/joaomartins/Documents/personal/dev/test/www.slowtheory.com/templates/default.jade",
 		"/Users/joaomartins/Documents/personal/dev/test/config.json",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/ui/container.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/templates/menu/link.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/content-view-factory.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/sharer.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/share-controller.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/ui/popover.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/main.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/templates/lfwrapper.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/popover/popover.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/menu/base.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/navigable.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/templates/mobile/navbar.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/templates/navigablesub.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/templates/navigable.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/config.js",
-		"/Users/joaomartins/dev/streamhub-sdk/src/social.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/templates/container.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/templates/popover/popover.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/default-permalink-content-handler.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/permalink.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/uri-interpreter.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/share-menu.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/share-button.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/share-command.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/sharer.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/collection/main.js",
-		"/Users/joaomartins/dev/streamhub-sdk/src/collection/clients/permalink-client.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/menu/share.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/views/twitter-content-view.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/thread/ui/menu/share.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec/default-permalink-content-handler.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec/share-controller.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec/share-command.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec/share-menu.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/index.html",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/collection/clients/http-client.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/templates/loader.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/menu/loader.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src/ui/templates/menu/share.mustache",
-		"/Users/joaomartins/dev/streamhub-sdk/src/user-agent.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/inherits/inherits.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/collection/clients/stream-client.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/controller/external.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/ui/button.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/thread/ui/menu/base.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec/share-button.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec-list.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec/permalink-view-factory.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/test/spec/controller/comment.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/blocks/ui/selectionpopover.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/controller/base.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/controller/comment.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/thread/ui/navigable.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/tests/spec/views/list-view.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/tests/spec/content/views/livefyre-content-view.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/views/streams/injector.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/ui/command.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/ui/auth-required-command.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/views/livefyre-content-view.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/css/content.less",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/tests/spec/util.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/tests/spec/ui/auth-required-command.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/tests/spec/content/types/livefyre-content.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/tests/spec/content/state-to-content.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/tests/spec/collection/clients/bootstrap-client.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/ui/hub-toggle-button.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/util.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/ui/hub-button.js",
-		"/Users/joaomartins/dev/streamhub-sdk/src/ui/button/templates/button.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/ui/templates/button.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/views/instagram-content-view.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/views/facebook-content-view.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/views/content-view.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/types/livefyre-content.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/templates/content.mustache",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/content/state-to-content.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/collection/streams/writer.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/collection/clients/write-client.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/collection/clients/bootstrap-client.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/auth/main.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/package.json",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/examples/listview/index.html",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/bower.json",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/mobile/thread/ui/threadpopover.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/package.json",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/bower.json",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/view/src/view.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript/thread/controller.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/view.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec/main.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec/permalink.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/spec/uri-interpreter.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src/modal/main.js",
-		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/widget/ui/desktop/userdetails.js",
-		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/widget/usercontextcontroller.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/tests/index.html",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/.bowerrc",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/.gitignore",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/lib/streamhub-sdk/src/collection/clients/write-client.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/lib/streamhub-sdk/src/jquery.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/lib/auth-delegates/src/delegates/livefyre.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/src/comment/main.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/src/modal/modal-input-command.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec/upload/main.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec/modal/modal-input-command.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec/comment/main.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec/command.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/src/upload/main.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/lib/streamhub-sdk/src/content/content-view-factory.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/bower.json",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/package.json",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/src/comment/button.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/src/upload/button.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/src/button.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/dist/streamhub-input.min.css",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/src/main.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec/comment/button.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec/modal/abstract/launchable-modal.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec/main.js",
-		"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec/upload/button.js"
+		"/Users/joaomartins/Documents/personal/dev/test/package.json",
+		"/Users/joaomartins/Documents/personal/dev/test/Gruntfile.js",
+		"/Users/joaomartins/Documents/personal/dev/test/README.md",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/styles/main.less",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/mixins.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/plugins/paginator.js",
+		"/Users/joaomartins/Documents/personal/dev/test/node_modules/wintersmith/src/plugins/page.coffee",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/layout.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/blog.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/post.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/article.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/index.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/default.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/plugins/helpers.js",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/posts/2013-04-12_1/index.md",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/posts/2013-04-06_1/index.md",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/posts/2013-04-03_1/index.md",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/includes/footer.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/includes/favicon.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/includes/meta.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/includes/about.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/styles/brandcolors.less",
+		"/Users/joaomartins/Documents/personal/dev/test/plugins/paginator.coffee",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/articles/bamboo-cutter/index.md",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/posts/apple-pie/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/robots.txt",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/sitemap.xml",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/humans.txt",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/performances.json",
+		"/Users/joaomartins/Documents/personal/dev/test/readme.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/js/bundled.js",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/js/bunded.js",
+		"/Users/joaomartins/Documents/personal/dev/test/.gitignore",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/.gitignore",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/articles/red-herring/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/utils.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/css/screen.css",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/directify.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/homepage.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/eventspage.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/index.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less/variables.less",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less/mixins.less",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/vendor/google/closure/externs/requires.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build/about.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/vendor/google/closure/externs/bootstrap.js",
+		"/Users/joaomartins/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build/index.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/events.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/filarmonica/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/index.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/page.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/about.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/contact.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/lessons.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/volunteer.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/Gruntfile.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less/navbar.less",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/dist/css/bootstrap.css",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/fundraisers.json",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/sardine-dinner/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/beef-a-portuguesa/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/shrimp-boil/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/lessons.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/volunteer.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/events.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/contact.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/about.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build/events.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/externs/jquery.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/cozida-portuguesa/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build/js/bundled.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/js/bootstrap.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/js/jquery.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/post-anniversary/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/members-dinner/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/lajense-dinner/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/filhoes/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/fatima/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/crab-feed/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/chicken-dinner/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/casino/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/fundraiser-note.jad",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/upcoming.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/directory.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/directory.json",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/item.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/events.json",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/istanbul.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/css/glyphicons.css",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/css/main.css",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/index.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/list.json",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/start.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/liar.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/never-covered.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/confirmation.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/problem.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/cycle.html",
+		"/Users/joaomartins/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/feedback.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/release.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/testing.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/execution.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/product.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/images/credits.txt",
+		"/Users/joaomartins/Downloads/autocompleteremotedata (1).js",
+		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/widget/windowcontroller.js",
+		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/widget/keyboardcontroller.js",
+		"/Users/joaomartins/dev/lfmod/lfpb/lfpbjs/node_modules/mocha/node_modules/debug/component.json",
+		"/Users/joaomartins/Downloads/autocompleteremotedata.js",
+		"/Users/joaomartins/dev/lfmod/src/soy/task.soy",
+		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/task/ui/tabbar.js",
+		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/app/mobilewidgetlibrary.js",
+		"/Users/joaomartins/dev/lfmod/src/soy/widget.soy"
 	],
 	"find":
 	{
@@ -626,168 +370,150 @@
 		"height": 0.0,
 		"where_history":
 		[
-			"/Users/joaomartins/Documents/personal/dev/test/www.slowtheory.com/",
-			"/Users/joaomartins/Documents/personal/dev/test/www.slowtheory.com/templates",
-			"/Users/joaomartins/Documents/personal/dev/test/www.slowtheory.com",
-			"/Users/joaomartins/Documents/personal/dev/test",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/less",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/src",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk/src",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/annotations/src/javascript",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-permalink/lib/streamhub-sdk",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/lib/auth-delegates",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/src",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/src",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/src",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/src",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/tests/spec",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/src",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/",
-			"/Users/joaomartins/Documents/personal/dev/streamhub-input/src"
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less/",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less",
+			"<open folders>"
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
-			"articles",
-			"template",
-			"!!!",
-			"options",
-			"getArticles",
-			"Articles",
-			"articles",
-			"Articles",
-			"articles",
-			"Articles",
-			"articles",
-			"getArticles",
-			"helpers",
-			"getArticles",
-			"metadata",
-			"page",
-			"Page",
+			"mmt",
+			"//",
+			".fa-fw.",
+			".fa.",
 			"article",
+			"push",
+			"fa-2x",
+			"//",
+			"fa-3x",
+			".fa-2x",
+			"@import \"",
+			"fycon-source-",
+			"social",
+			".lf ",
+			"fycon-url",
+			"a",
+			"tran",
+			"disabled",
+			".pager ",
+			"previous",
+			"\"",
+			"post",
+			"div",
+			"post",
+			"    ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"article",
+			"index.html",
+			"locals",
+			"faasl",
+			"**",
+			"photo",
+			"index",
 			"articles",
-			"Articles",
-			"articles",
-			"$",
-			"ShareCommand",
-			"@{icon-font-path}@{fycon-font-name}",
-			"popover",
-			"Popover",
-			"popover",
-			"shareMenu",
-			"hide",
-			".transform",
-			"TODO",
-			"share",
-			"opts",
-			"self",
-			"self._content",
-			"self._",
-			"SDKCollection",
-			"ShareController",
-			"config",
-			"ctrl",
-			"$",
-			"StateToContent",
-			"config",
-			"block",
-			"ui/container",
-			"thread/lfwrapper",
-			"config",
-			"blocks/detector",
-			"templates/blocks/elementwrap",
-			"templates/tracking",
-			"thread/menu/link",
-			"thread-btn-override",
-			"tracking",
-			"WriteEvents",
-			"CommentEvents",
-			"permalink",
-			"CommentEvents",
-			"textEnumeration",
-			"loader",
-			"WriteEvents",
-			"nullFunction",
-			"textEnumeration",
-			"ThreadEvents",
-			"internals",
-			"BootstrapKeys",
-			"service",
-			"getMediated",
-			"AnnotationsCollection",
-			"AnnotationsHttpClient",
-			"LivefyreStreamClient",
-			"_getBaseOpts",
-			"share",
-			"_onCommentShared",
-			"COMMENT_SHARED",
-			"_handlePress",
-			"_execute",
-			"events",
-			"buildEventData",
-			"\n\n            throw 'TODO (joao) Implement this!';",
-			"command",
-			"Command",
-			"spyon",
-			"setElement",
-			"delegateEvent",
-			"ShareButton",
-			"ShareCommand",
-			"ShareController",
-			"    \n",
-			"ShareMenu",
-			"ShareController",
-			"ShareMenu",
-			"permalinkViewFactory",
-			"ContentView",
-			"Modal",
-			"handlePermalinkContent",
-			"'content'",
+			"getIntro",
+			"<br>",
+			"20130401_165630.jpg",
+			"</em>",
+			"<em>",
+			"**<em></em>**",
+			"</strong>",
+			"<strong>",
+			"</span>",
+			"<span style=\"text-decoration:underline;\">",
+			"</p>\n<p>",
+			"[x]",
+			"and",
+			"\"",
+			"17",
+			"preview",
+			"print",
+			"se.in",
+			"collapsed",
+			".in",
+			"var ",
+			"function () ",
+			"ATTR",
+			"match[",
+			"needsContext",
+			"ATTR",
+			"match",
+			"charAt",
+			"lesslint",
+			"@media print {\n    width: 100%;\n    left: 0;\n  }",
+			"itemsDirecotry",
+			"h6",
+			"h5",
+			"h4",
+			"h3",
+			"h2",
+			"h1",
+			"            ",
+			"table",
+			"small",
 			"content",
-			"Content",
-			"content",
-			"CONTENT",
-			"permalinkViewFactory",
-			"GalleryAttachmentListView",
-			"AttachmentGalleryModal",
-			"PermalinkContentViewFactory",
-			"cvf",
-			"ContentViewFactory",
-			"GalleryAttachmentListView",
-			"BaseMenu",
-			"Popover",
-			"WriteEvents",
-			"SocialUtil",
-			"requireAuth",
-			"internals",
-			"CommentEvents",
-			"CommentController",
-			"Button",
-			"button",
-			"Button",
-			"loader",
-			"_position",
-			"position",
-			"_position",
-			"LIKE_REQUEST_LISTENER",
-			" - ",
-			" -\n",
-			" - ",
-			" -\n",
-			" - "
+			"#menu",
+			"menu",
+			"SiteMenu",
+			"justify",
+			"center",
+			"navbar-right",
+			"reference",
+			"Walter Turncoat",
+			"font",
+			"nav",
+			"menu",
+			"icon-bar",
+			"carousel",
+			"collapse",
+			"\"",
+			"pull-",
+			"pull",
+			"pull-left",
+			".pull-left(",
+			"pull-left",
+			"pull-left(",
+			"pull-left()",
+			".navbar-vertical-align(",
+			".navbar-vertical-align",
+			"left_col",
+			"menu",
+			"#menu",
+			"container",
+			"row",
+			"#banner",
+			"#header",
+			"#menu",
+			"banner",
+			"containter",
+			"bg_B",
+			"#search",
+			"#nav ",
+			"#nav",
+			" #nav",
+			"#nav",
+			"#menu",
+			"container"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -795,42 +521,9 @@
 		"regex": false,
 		"replace_history":
 		[
-			"preventDefault",
-			"\\",
-			"\"",
-			"('streamhub-sdk/ui/auth-required-c",
-			"$textareaEl",
-			"self",
-			"this.$el",
-			"this",
-			"Comment$1",
-			"Comment($1)",
-			"Comment",
-			"hub-modal-input-header",
-			"hub-modal-input-wrapper",
-			"hub-upload",
-			"hub-comment",
-			"hub-comment-btn",
-			"hub-upload-btn",
-			"hub-input-btn",
-			"._packageInput",
-			"'streamhub-input/upload",
-			"'streamhub-input/modal",
-			"'streamhub-input/comment",
-			"'streamhub-input",
-			"lf-comment",
-			"view",
-			"util",
-			"upldBtn",
-			"UploadButton",
-			"uploadInput",
-			"filepicker",
-			"picker",
-			"Upload",
-			"_destination",
-			"util",
-			"InputButton",
-			"\"",
+			"  ",
+			"  \n",
+			"\n",
 			"\"rotate-z\":\n",
 			"\"rotate-y\":\n",
 			"\"rotate-x\":\n",
@@ -847,237 +540,13 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "templates/mixins.jade",
-					"settings":
-					{
-						"buffer_size": 2779,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1243,
-								1245
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "config.json",
-					"settings":
-					{
-						"buffer_size": 542,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								59,
-								59
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "node_modules/wintersmith/lib/plugins/page.js",
-					"settings":
-					{
-						"buffer_size": 6880,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1705,
-								1713
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "templates/feed-all.jade",
-					"settings":
-					{
-						"buffer_size": 56,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								33,
-								44
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "plugins/paginator.coffee",
-					"settings":
-					{
-						"buffer_size": 3072,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								535,
-								535
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 735.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "www.slowtheory.com/node_modules/wintersmith-coffee/example/templates/index.jade",
-					"settings":
-					{
-						"buffer_size": 312,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7,
-								7
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 6,
-					"file": "www.slowtheory.com/templates/feed.jade",
-					"settings":
-					{
-						"buffer_size": 976,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								500,
-								500
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "templates/index.jade",
-					"settings":
-					{
-						"buffer_size": 592,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								203,
-								203
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1148,6 +617,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 213.0,
+	"side_bar_width": 148.0,
 	"status_bar_visible": true
 }

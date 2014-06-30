@@ -9,7 +9,7 @@ photo: "/posts/2013-04-12_1/splash.jpg"
 
 Purple Squirrel by Michael B. Junge.
 
-<span class="more-2"></span>
+<hr>
 
 Whether you’re in the process of a new job search now, planning a search soon, or aren’t planning a job change in the foreseeable future, you should take a look at this book. So, yeah; basically, everybody who hasn’t already established concrete retirement plans could benefit from this book.
 

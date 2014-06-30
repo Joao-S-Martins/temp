@@ -218,6 +218,14 @@
 /**************************************/
 /*          Global                    */
 /**************************************/
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+main {
+    margin-top: -@navbar-height;
+}
 .transition-bg {
     .transition(background 300ms);
 }
@@ -316,10 +324,32 @@ section ul, section ul li {
 
 
 /**************************************/
+/*          Splash                    */
+/**************************************/
+.splash {
+    &:extend(.clearfix);
+    background-image: url(default.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    .square(100%);
+    display: block;
+    &:before {
+        &:extend(.item-thumb:before);
+    }
+    .transparency {
+        &:extend(.item-title);
+        color: white;
+    }
+}
+
+
+/**************************************/
 /*          Menus                     */
 /**************************************/
 .navbar {
     .border-radius(0);
+    top: -@navbar-height;
 }
 
 /**************************************/
@@ -339,12 +369,6 @@ section ul, section ul li {
     background-clip: content-box;
     .border-radius(6px);
     border: 1px solid black;
-    &:after, &:before {
-        content: " ";
-        background-color: rgba(0, 0, 0, 0.55);
-        display: block;
-        .square(100%);
-    }
 }
 
 .item-thumb {
@@ -363,7 +387,18 @@ section ul, section ul li {
     }
     &:hover {
         &:extend(.item-thumb);
-        .opacity(0.55);
+        .opacity(0.35);
+    }
+    &:before {
+        content: " ";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.25);
+        display: block;
+        .square(100%);
+    }
+    h3 {
+        margin: 0;
+        position: absolute;
     }
 }
 
@@ -377,7 +412,7 @@ section ul, section ul li {
     //margin: 10px auto 0 auto;
     //display: table-cell;
     vertical-align: middle;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.45);
     background-clip: content-box;
 }
 
@@ -386,7 +421,7 @@ section ul, section ul li {
     width: 100%;
     bottom: 15px;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.45);
     background-clip: content-box;
 }
 

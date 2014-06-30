@@ -45,6 +45,19 @@ extends ./layout
 block prepend title
     = page.title + ' - '
 
+block styles
+  // build:[href] /styles/main.min.css 
+  // build:staging[href] /temp/styles/main.min.css 
+  link(rel='stylesheet', href='/styles/main.css', type='text/css', media='screen, projection, print')
+  // /build 
+
+block splash
+  - var preview = page.intro
+  - var preview = (typeof(preview) == 'string') ? preview.replace(/(<([^>]+)>)/ig,""):''
+  - var preview = (typeof(preview) == 'string') ? typogr(preview.substring(0,600)).typogrify():''
+  - var preview = (typeof(preview) == 'string') ? preview.substring(0,preview.lastIndexOf(".")+1):''
+  +Splash(page.metadata.photo, page.title, preview)
+
 block content
   section.content.row
     //article.col-xs-12.col-md-8

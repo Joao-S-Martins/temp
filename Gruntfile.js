@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         dotfiles: false,
         add: false,
         branch: 'gh-pages',
-        message: 'Testing deploy',
+        message: 'Temp deploy',
         push: true
       },
       src: '**/*'
@@ -206,6 +206,11 @@ module.exports = function(grunt) {
     'clean': {
       'build': ["build/"],
       'dist': ["dist/"]
+    },
+    'shell': {
+      'bump': {
+        command: 'npm version patch'
+      }
     }
   });
 
@@ -224,6 +229,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-closure-tools');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('default', ['build']);
 
@@ -231,7 +237,7 @@ module.exports = function(grunt) {
   grunt.registerTask('css', ['uncss','cssUrlEmbed','cssmin']);
   grunt.registerTask('html', ['processhtml','htmlmin']);
   grunt.registerTask('img', ['imagemin:backgrounds','imagemin:homeitems']);
-  grunt.registerTask('deploy', ['build','gh-pages']);
+  grunt.registerTask('deploy', ['build','gh-pages','shell:bump']);
   grunt.registerTask('build', ['clean','wintersmith:build','js','img','css','html']);
   grunt.registerTask('dev', ['clean','wintersmith:build','js','img','css','html']);
 

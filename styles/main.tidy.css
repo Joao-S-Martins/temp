@@ -107,6 +107,10 @@ a:hover {
   outline: 0;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -261,6 +265,10 @@ p {
 ul {
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+ul ul {
+  margin-bottom: 0;
 }
 
 .container {
@@ -671,6 +679,10 @@ section ul li {
 
 .fa-arrow-up:before {
   content: "\f062";
+}
+
+.fa-calendar:before {
+  content: "\f073";
 }
 
 .fa-twitter:before {

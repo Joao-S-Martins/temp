@@ -68,16 +68,14 @@ section#home.full-screen
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/media/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/assets/media/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="/assets/media/favicon.ico">
-    <!-- build:[href] /styles/main.min.css -->
-    <!-- build:staging[href] /temp/styles/main.min.css -->
-    <link rel="stylesheet" href="/temp/styles/main.css" type="text/css" media="screen, projection, print">
+    <!-- build:dist[href] /styles/main.min.css -->
+    <!-- build:stage[href] /temp/styles/main.min.css -->
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" media="screen, projection, print">
     <!-- /build -->
-    <!-- build:[src] js/compiled.js-->
-    <script src="js/bundled.js"></script>
-    <!-- /build -->
+    <script src="js/compiled.js"></script>
   </head>
   <body>
-    <header style="background-image:url(/temp/posts/2013-04-12_1/splash.jpg)" class="splash">
+    <header style="background-image:url(/posts/2013-04-12_1/splash.jpg)" class="splash">
       <div class="transparency">
         <div class="container">
           <h1>Review: Purple Squirrel by Michael B. Junge
@@ -237,6 +235,6 @@ Purple Squirrel by Michael B. Junge.
         </div>
       </div>
     </footer>
-    <script src="js/default.js"></script>
+    <script src="js/default.js" async="async"></script>
   </body>
 </html>

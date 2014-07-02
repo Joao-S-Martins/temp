@@ -68,7 +68,8 @@ section#home.full-screen
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/media/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/assets/media/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="/assets/media/favicon.ico">
-    <!-- build:[href] styles/main.min.css -->
+    <!-- build:dist[href] styles/main.min.css -->
+    <!-- build:stage[href] temp/styles/main.min.css -->
     <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen, projection, print">
     <!-- /build -->
     <style>
@@ -80,9 +81,7 @@ section#home.full-screen
       }
       
     </style>
-    <!-- build:[src] js/compiled.js-->
-    <script src="js/bundled.js"></script>
-    <!-- /build -->
+    <script src="js/compiled.js"></script>
   </head>
   <body>
     <header style="background-image:url()" class="splash">
@@ -231,6 +230,6 @@ section#home.full-screen
         </div>
       </div>
     </footer>
-    <script src="js/default.js"></script>
+    <script src="js/default.js" async="async"></script>
   </body>
 </html>

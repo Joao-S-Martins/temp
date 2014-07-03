@@ -15,8 +15,9 @@ html(lang='en')
       include includes/favicon
 
       block styles
-        // build:[href] styles/main.min.css 
-        link(rel='stylesheet', href='styles/main.css', type='text/css', media='screen, projection, print')
+        // build:[href]:dist /styles/main.min.css 
+        // build:[href]:stage /temp/styles/main.min.css 
+        link(rel='stylesheet', href='/styles/main.css', type='text/css', media='screen, projection, print')
         // /build 
         style.
           body {
@@ -26,7 +27,7 @@ html(lang='en')
             width: auto;
           }
 
-      block scripts
+      block blockingscripts
         // build:[src] js/compiled.js
         script(src='js/bundled.js')
         // /build 
@@ -104,5 +105,5 @@ html(lang='en')
       include includes/footer
 
     //- Load javascript
-    block bodyscripts
-      script(src='js/default.js')
+    block asyncscripts
+      script(src='js/default.js',async=true)

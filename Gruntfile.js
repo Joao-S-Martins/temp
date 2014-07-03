@@ -44,7 +44,12 @@ module.exports = function(grunt) {
           stylesheets  : ['styles/main.css']
         },
         files: {
-          'build/styles/main.tidy.css': ['build/index.html']
+          'build/styles/main.tidy.css':
+            [
+              'build/index.html',
+              'build/2013/04/03/apple-pie-moonshine-recipe/index.html',
+              'build/1969/12/31/untitled/archive.html'
+            ]
         }
       }
     },
@@ -67,6 +72,11 @@ module.exports = function(grunt) {
         includeBase: 'build/'
       },
       'dist': {
+        options: {
+          process: true,
+        }
+      },
+      'stage': {
         options: {
           process: true,
         },
@@ -139,7 +149,7 @@ module.exports = function(grunt) {
     'closureCompiler': {
       options: {
         // [REQUIRED] Path to closure compiler
-        compilerFile: 'vendor/google/closure/compiler.v20140407.jar',
+        compilerFile: './vendor/google/closure/compiler.v20140407.jar',
 
         // [OPTIONAL] set to true if you want to check if files were modified
         // before starting compilation (can save some time in large sourcebases)
@@ -240,6 +250,7 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy', ['build','gh-pages','shell:bump']);
   grunt.registerTask('build', ['clean','wintersmith:build','js','img','css','html']);
   grunt.registerTask('dev', ['clean','wintersmith:build','js','img','css','html']);
+  grunt.registerTask('stage', ['clean','wintersmith:build','css','processhtml:stage','gh-pages']);
 
   //grunt.registerTask('htmllint', ['grunt-html5-lint']);
   //grunt.registerTask('csslint', ['lesslint']);

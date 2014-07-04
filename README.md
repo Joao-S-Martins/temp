@@ -37,11 +37,13 @@ Joao's thoughts, digitized, to outlast Joao's mind.
 - [ ] Contact form
 - [ ] Newsletter sign-up
 - [ ] Tags
+- [ ] Tag cloud
 
 #####Content
 - [ ] Online resume page
 - [ ] GitHub projects gallery
 - [ ] About me
+- [ ] Categories (tags?)
 
 #####Non-mobile functionality
 - [ ] Posts AJAXed and shown in modal

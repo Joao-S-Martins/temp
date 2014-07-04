@@ -115,18 +115,6 @@ mixin SiteMenu(id, classes)
           +MenuLink('Newsletter', '/')
   //end .navbar
 
-mixin About()
-  article.about.col-xs-12.col-md-8.col-md-push-2.col-lg-6.col-lg-push-3
-    h1 About me
-    .left
-      img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?s=160',height=160,width=160)
-      //img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=wavatar&s=160&f=y')
-      //img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=identicon&s=160&f=y')
-      //img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=monsterid&s=160&f=y')
-      +SocialLinks()
-    p.
-      I'm a software engineer working in San Francisco.
-  //end .about
 
 mixin PostThumb(post)
   //- splashUrl = '/posts/2013-04-03_1/splash.jpg'
@@ -186,10 +174,10 @@ mixin Paginator(type, prevPage, nextPage)
 
 mixin SocialLinks()
   .social
-    a.fa.fa-fw.fa-github(href="//www.github.com/joao-s-martins")
-    a.fa.fa-fw.fa-facebook(href='//www.facebook.com/joao.martins.9440')
-    a.fa.fa-fw.fa-twitter(href='//www.twitter.com/1906/joao')
-    a.fa.fa-fw.fa-linkedin(href='//www.linkedin.com/pub/john-martins/2/26a/49a')
+    a.fa.fa-fw.fa-github(href='//www.github.com/joao-s-martins',target='_blank')
+    a.fa.fa-fw.fa-facebook(href='//www.facebook.com/joao.martins.9440',target='_blank')
+    a.fa.fa-fw.fa-twitter(href='//www.twitter.com/1906/joao',target='_blank')
+    a.fa.fa-fw.fa-linkedin(href='//www.linkedin.com/pub/john-martins/2/26a/49a',target='_blank')
   //end .social
 
 mixin Copyright()

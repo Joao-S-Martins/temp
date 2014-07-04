@@ -58,18 +58,33 @@ block splash
   - var preview = (typeof(preview) == 'string') ? preview.substring(0,preview.lastIndexOf(".")+1):''
   +Splash(page.metadata.photo, page.title, preview)
 
-block content
-  section.content.row
-    //article.col-xs-12.col-md-8
-    article.col-xs-12
-      header
+block header
+  .container
+    .row
+      header.col-xs-12
         h3!= typogr(page.title).typogrify()
         p.post-date
           i.fa.fa-calendar
           - mmt = moment(page.metadata.date)
           span(style='margin-left:10px')= env.helpers.utils.formatDate(mmt)
-      .post-content!= typogr(page.html).typogrify()
-    //aside.col-xs-12.col-md-4
-      | aside stuff
-  .row
-    +Paginator('post', prevPage, nextPage)
+      //end header
+block content
+  .content-container.container
+    section#content.row
+      //article.col-xs-12.col-md-8
+      article.post.col-xs-12
+        //header
+          h3!= typogr(page.title).typogrify()
+          p.post-date
+            i.fa.fa-calendar
+            - mmt = moment(page.metadata.date)
+            span(style='margin-left:10px')= env.helpers.utils.formatDate(mmt)
+        //end header
+        .post-content!= typogr(page.html).typogrify()
+      //end .post
+    //end #content
+      //aside.col-xs-12.col-md-4
+        | aside stuff
+    .pagination.row
+      +Paginator('post', prevPage, nextPage)
+    //end .pagination

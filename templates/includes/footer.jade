@@ -1,13 +1,8 @@
-include ../mixins
+include ./mixins
 .row
-  .col-xs-12.col-sm-6.col-sm-push-6.text-center
+  .right.col-xs-12.col-sm-6.col-sm-push-6.text-center
     +SocialLinks()
-  .col-xs-12.col-sm-6.col-sm-pull-6.text-center
-    .copyright
-      | Joao S. Martins
-      br
-      | 2014 © All Rights Reserved.
-      br
-      | &copy; #{ new Date().getFullYear() }, #{ locals.owner } &mdash; powered by&nbsp;
-      a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+  .left.col-xs-12.col-sm-6.col-sm-pull-6.text-center
+    .copyright= locals.owner
+      | <br>&copy; #{ new Date().getFullYear() }, All Rights Reserved.
     //end .copyright

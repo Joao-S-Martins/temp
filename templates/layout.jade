@@ -1,4 +1,4 @@
-include mixins
+include ./includes/mixins
 doctype html
 block vars
   - var bodyclass = null;
@@ -43,8 +43,9 @@ html(lang='en')
         .modal-dialog
           .modal-content
 
-    main.container
+    main
       block header
+        include ./includes/about
       block content
         
 
@@ -100,9 +101,10 @@ html(lang='en')
                       button#submit.btn.btn-default(name='submit') Send
 
     //- Footer
-    footer.container
-      a.fa.fa-arrow-up.toTop(href='#')
-      include includes/footer
+    footer
+      .container
+        a.fa.fa-arrow-up.toTop(href='#')
+        include includes/footer
 
     //- Load javascript
     block asyncscripts

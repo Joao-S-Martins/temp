@@ -3,12 +3,16 @@ block prepend title
     | Blog - 
 
 block content
-  .row
-    +About()
-  section.content.row
-    .col-xs-12
-      .row
-        each article, idx in articles
-          +PostThumb(article)
-      .row
-        +Paginator('posts', prevPage, nextPage)
+  .content-container.container
+    section#content.row
+      .blog.col-xs-12
+        .items-row.row
+          each article, idx in articles
+            +PostThumb(article)
+        //end .items-row
+        .pagination.row
+          +Paginator('posts', prevPage, nextPage)
+        //end .pagination
+      //end .blog
+    //end #content
+  //end.content-container

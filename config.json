@@ -1,9 +1,9 @@
 {
   "locals": {
     "url": "Joao.io",
-    "name": "Joao's Life Journal",
+    "name": "Timelust",
     "owner": "Joao Sousa Martins",
-    "description": "Myself, for my future generations"
+    "description": "My journal, for my future generations"
   },
   "plugins": [
     "./plugins/helpers.js",

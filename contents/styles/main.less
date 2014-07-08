@@ -7,6 +7,7 @@
 @import "@{bootstrap}/variables.less";
 @import "@{bootstrap}/mixins.less";
 @import "@{bootstrap}/utilities.less";
+@import "@{bootstrap}/responsive-utilities.less";
 
 /**************************************/
 /*      Mixins                        */
@@ -214,8 +215,7 @@
 @import "@{bootstrap}/tables.less";
 @import "@{bootstrap}/forms.less";
 @import "@{bootstrap}/buttons.less";
-@import "@{bootstrap}/glyphicons.less";
-@import "@{bootstrap}/responsive-utilities.less";
+@import "@{bootstrap}/breadcrumbs.less";
 
 
 /** Bootstrap nav */
@@ -236,6 +236,7 @@ main {
     padding-bottom: 12px;
     background-color: #fafafa;
     //.nice-snow();
+    .lined-paper();
 }
 
 .content, .col-xs-12 {
@@ -311,6 +312,11 @@ section ul, section ul li {
     background-repeat: repeat;
 }
 
+.lined-paper() {
+    .img-retina('img/linedpaper.png', 'img/linedpaper_@2X.png', 412px, 300px);
+    background-repeat: repeat;
+}
+
 
 /**************************************/
 /*          Font-Awesome              */
@@ -334,42 +340,73 @@ section ul, section ul li {
 
 
 /**************************************/
-/*          Social                    */
+/*          Social & Share            */
 /**************************************/
 @social-color: #999;
 @import "brandcolors.less"; //From brandcolors.net, 6/26/2014
 .social {
     font-size: 1.4em;
     .fa {
-        //font-size: inherit;
-        color: @social-color;
-        //display: inline-block;
         margin-right: 18px;
-        border: 1px solid @social-color;
-        .border-radius(4px);
         &:last-child {
             margin-right: 0;
         }
-        &:hover {
-            color: #fff;
+    }
+}
+
+.share {
+    font-size: 1.8em;
+    .fa {
+        margin-right: 1em;
+        margin-bottom: 1em;
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
         }
-        &.fa-facebook:hover {
-            background-color: @bc-facebook;
-            border-color: @bc-facebook;
-        }
-        &.fa-github:hover {
-            background-color: @bc-github;
-            border-color: @bc-github;
-        }
-        &.fa-linkedin:hover {
-            background-color: @bc-linkedin;
-            border-color: @bc-linkedin;
-        }
-        &.fa-twitter:hover {
-            background-color: @bc-twitter;
-            border-color: @bc-twitter;
+        @media (min-width: @screen-sm-min) {
+            display: block;
         }
     }
+}
+
+.social-brand-shared {
+    color: @social-color;
+    border: 1px solid @social-color;
+    .border-radius(4px);
+}
+
+.social-brand(@color) {
+    &:hover {
+        color: #fff;
+        background-color: @color;
+        border-color: @color;
+    }
+}
+
+.fa-facebook {
+    &:extend(.social-brand-shared);
+    .social-brand(@bc-facebook);
+}
+
+.fa-github {
+    &:extend(.social-brand-shared);
+    .social-brand(@bc-github);
+}
+
+.fa-google-plus {
+    &:extend(.social-brand-shared);
+    //Typo in brandcolors.less where google+ color overrides google blue
+    .social-brand(@bc-google);
+}
+
+.fa-linkedin {
+    &:extend(.social-brand-shared);
+    .social-brand(@bc-linkedin);
+}
+
+.fa-twitter {
+    &:extend(.social-brand-shared);
+    .social-brand(@bc-twitter);
 }
 
 
@@ -386,20 +423,22 @@ section ul, section ul li {
     display: block;
     vertical-align: middle;
     &:before {
-        &:extend(.item-thumb:before);
+        content: " ";
+        background-color: rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 100%;
         display: inline-block;
         vertical-align: middle;
-        height: 100%;
     }
     .transparency {
         &:extend(.item-title);
         color: white;
         position: relative;
         display: inline-block;
-        left: 50%;
-        top: 40%;
-        .transform(translate(-50%, -60%));
-        //top: 30%;
+        //left: 50%;
+        //top: 40%;
+        //.transform(translate(-50%, -60%));
+        bottom: 10em;
     }
 }
 
@@ -425,26 +464,24 @@ section ul, section ul li {
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 10px;
+    small {
+        text-transform: none;
+    }
 }
 .about {
-    margin-bottom: 12px;
+    //margin-bottom: 12px;
     margin-top: 12px;
     text-align: justify;
     .left {
         &:extend(.pull-left);
         margin-right: 16px;
+        margin-top: 10px;
     }
     .social {
         margin-top: 8px;
         margin-bottom: 8px;
-        a {
-            //margin-right: 18px;
-            &:first-child {
-                margin-left: 2px;
-            }
-            &:last-child {
-                //margin-right: 0;
-            }
+        .fa:first-child {
+            margin-left: 2px;
         }
     }
 }

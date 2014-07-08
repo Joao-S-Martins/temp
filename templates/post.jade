@@ -61,18 +61,21 @@ block splash
 block header
   .container
     .row
-      header.col-xs-12
+      header.col-xs-12.page-header
         h3!= typogr(page.title).typogrify()
         p.post-date
           i.fa.fa-calendar
           - mmt = moment(page.metadata.date)
           span(style='margin-left:10px')= env.helpers.utils.formatDate(mmt)
+        //-+Breadcrumb([{name:'blog',href:'/'},{name:page.title}])
       //end header
 block content
   .content-container.container
     section#content.row
-      //article.col-xs-12.col-md-8
-      article.post.col-xs-12
+      aside.col-xs-12.col-sm-1
+        +ShareLinks()
+      //article.col-xs-12.col-md-10
+      article.post.col-xs-12.col-sm-10
         //header
           h3!= typogr(page.title).typogrify()
           p.post-date

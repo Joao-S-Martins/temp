@@ -1,0 +1,268 @@
+
+<!--mixin author(authorName)
+- var author = contents.authors[authorName + '.json']
+span.author
+  if author
+    a(href='mailto:'+author.metadata.email)= author.metadata.name
+  else
+    =authorName
+    
+-->
+<!--mixin postThumb(post)
+a(href!=post.url)
+  div.post.post-dimension
+    div.post-thumbnail.tint.post-dimension
+      img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+    p.post-title= post.title
+    div.post-lower-section
+      div.post-line-left
+      div#post-date-wrap
+        p.post-date= post.date
+          span.fycon-conversation.post-comment
+          span.post-comment-count
+            span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+      div.post-line-right
+      
+      
+-->
+<!--mixin headSlider(title, imgUrl)
+section#home.full-screen
+  div#slider
+    nav.slides-navigation
+    a.prev(href='#')
+    a.next(href='#')
+    ul.slides-container
+      li
+        div.image-caption
+          div.inner
+            h2.bigtext.strtoupper.nomargin title
+        div.fullscreen-img(style='background-image: ' + imgUrl)
+        
+        
+-->
+<!--mixin postModal(post)
+// CSS Rules?
+.modal-header
+  header
+    h2!= typogr(page.title).typogrify()
+    p.post-date
+      i.fa.fa-calendar
+      span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+.modal-body
+  article.post-content!= typogr(page.html).typogrify()
+  .divider
+  
+  
+--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Liz's wedding speech - Chronostasis - My journal, for my future generations - Joao.io
+    </title>
+    <!--link(rel='alternate', href='http://feeds.feedburner.com/slowtheory', type='application/rss+xml', title=locals.description)-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/media/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/media/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/media/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/media/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/assets/media/favicon.ico">
+    <!-- build:[href]:dist /styles/main.min.css -->
+    <link rel="stylesheet" href="/temp/styles/main.min.css">
+    <!-- build:[src]:dist js/compiled.js-->
+    <script src="js/bundled.js"></script>
+    <!-- /build -->
+  </head>
+  <body>
+    <header style="background-image:url(/posts/2014-07-05_1/splash.jpg)" class="splash">
+      <div class="transparency">
+        <div class="container text-right">
+          <h1>Liz's wedding speech
+          </h1>
+          <h2>I used to be the kind of an asshole that valued daughters differently than sons.
+It was a short-lived moment in my life, but it still happened. I used to think that my father-in-law hid himself in his storehouse, behind large saw blades and random amounts of wiring and plumbing equipment. I thougt he did this to scare away the daughters that he wasn’t ready to raise.
+But I was foolish.
+Little did I know of his work. Truly, he desired for his daughters to have the greatest that this life has to offer.
+          </h2>
+        </div>
+      </div>
+    </header>
+    <!--end .splash-->
+    <nav role="navigation" class="navbar navbar-inverse">
+      <div class="container">
+        <button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <!--end .navbar-toggle-->
+        <div id="menu" role="navigation" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Categories</a></li>
+            <li><a href="/">Résumé</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end .navbar-->
+    <!--block modal
+    .modal.fade.content
+      .modal-dialog
+        .modal-content
+        
+    -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <header class="col-xs-12 page-header">
+            <h3>Liz&#8217;s wedding speech</h3>
+            <p class="post-date"><i class="fa fa-calendar"></i><span style="margin-left:10px">July 5th, 2014</span>
+            </p>
+          </header>
+          <!--end header-->
+        </div>
+      </div>
+      <div class="content-container container">
+        <section id="content" class="row">
+          <aside class="col-xs-12 col-sm-1">
+            <div class="share"><a href="" class="fa fa-fw fa-facebook"></a><a href="" class="fa fa-fw fa-twitter"></a><a href="" class="fa fa-fw fa-linkedin"></a><a href="" class="fa fa-fw fa-google-plus"></a></div>
+            <!--end .share-->
+          </aside>
+          <!--article.col-xs-12.col-md-10-->
+          <article class="post col-xs-12 col-sm-10">
+            <!--header
+            h3!= typogr(page.title).typogrify()
+            p.post-date
+              i.fa.fa-calendar
+              - mmt = moment(page.metadata.date)
+              span(style='margin-left:10px')= env.helpers.utils.formatDate(mmt)
+            -->
+            <!--end header-->
+            <div class="post-content"><p>I used to be the kind of an asshole that valued daughters differently than sons.
+It was a short-lived moment in my life, but it still happened. I used to think that my father-in-law hid himself in his storehouse, behind large saw blades and random amounts of wiring and plumbing equipment. I thougt he did this to scare away the daughters that he wasn’t ready to raise.
+But I was foolish.
+Little did I know of his work. Truly, he desired for his daughters to have the greatest that this life has to offer. He instilled in his daughters the strength to settle for no man less than him, that of a great and determined provider.
+He encouraged each of his lovely daughters into believing that they could tackle this difficult life on their own, but still while pushing for them to find a parter to share their path.
+Joelle was quick to do this after her worrysom teenaged years. She sought to acheive things on her own before starting her family, but alas, it wasn’t meant to be. Her soul-partner quickly found her and they married in the blink of an eye, giving my father-in-law his first experience of grandchildren.
+Next came the daughter that I married. She was so stuborn and insisted on years of schooling before she would even considered a settled and traditionsl marraige. I guess I just didn’t measure up to her imagination of an ideal husband and viable father to her children.
+Finally, there was Elizabeth. She was never like the other two. We’d joke about her smile being like Joelle’s even though her laugh was like Raquelle’s.
+When Liz was very young, her and I wrestled on the rug. Raquelle was watching a bit of wresting on <span class="caps">TV</span> to create conversations with me, but Liz was the one who was willing to try crazy maneuvers on me. Later, much later, I had sons that wouldn’t sleep and required constant attention. Liz was always there to relieve the gap between sleep and party&nbsp;time. </p>
+</div>
+          </article>
+          <!--end .post-->
+        </section>
+        <!--end #content
+        //aside.col-xs-12.col-md-4
+          | aside stuff
+        -->
+        <div class="pagination row">
+          <ul class="pager text-center">
+            <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Newer post</a></li>
+            <li class="disabled next col-xs-6"><a>Older post <i class="fa fa-angle-double-right"></i></a></li>
+          </ul>
+        </div>
+        <!--end .pagination-->
+      </div>
+      <!--.modal.fade.contact-modal
+      .modal-dialog.modal-sm
+        .modal-content
+          form.form-horizontal
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h2 Contact me
+            .modal-body
+              fieldset
+                .control-group
+                  label.control-label(for='contact_name') Name
+                  .controls
+                    input#contact_name.input-xlarge(name='contact_name', type='text', placeholder='Enter Name', required)
+                .control-group
+                  label.control-label(for='contact_email') Email
+                  .controls
+                    input#contact_email.input-xlarge(name='contact_email', type='email', placeholder='Enter Email', required)
+                .control-group
+                  label.control-label(for='contact_message') Message
+                  .controls
+                    textarea#contact_message(name='contact_message', placeholder='Enter Message', required)
+              .modal-footer
+                .control-group
+                  label.control-label(for='submit')
+                  .controls
+                    button#submit.btn.btn-default(name='submit') Send
+                    
+      -->
+    </main>
+    <footer>
+      <div class="container"><a href="#" class="fa fa-arrow-up toTop"></a>
+        <!--mixin author(authorName)
+        - var author = contents.authors[authorName + '.json']
+        span.author
+          if author
+            a(href='mailto:'+author.metadata.email)= author.metadata.name
+          else
+            =authorName
+            
+        -->
+        <!--mixin postThumb(post)
+        a(href!=post.url)
+          div.post.post-dimension
+            div.post-thumbnail.tint.post-dimension
+              img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+            p.post-title= post.title
+            div.post-lower-section
+              div.post-line-left
+              div#post-date-wrap
+                p.post-date= post.date
+                  span.fycon-conversation.post-comment
+                  span.post-comment-count
+                    span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+              div.post-line-right
+              
+              
+        -->
+        <!--mixin headSlider(title, imgUrl)
+        section#home.full-screen
+          div#slider
+            nav.slides-navigation
+            a.prev(href='#')
+            a.next(href='#')
+            ul.slides-container
+              li
+                div.image-caption
+                  div.inner
+                    h2.bigtext.strtoupper.nomargin title
+                div.fullscreen-img(style='background-image: ' + imgUrl)
+                
+                
+        -->
+        <!--mixin postModal(post)
+        // CSS Rules?
+        .modal-header
+          header
+            h2!= typogr(page.title).typogrify()
+            p.post-date
+              i.fa.fa-calendar
+              span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+          button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+        .modal-body
+          article.post-content!= typogr(page.html).typogrify()
+          .divider
+          
+          
+        -->
+        <div class="row">
+          <div class="right col-xs-12 col-sm-6 col-sm-push-6 text-center">
+                    <div class="social"><a href="//www.github.com/joao-s-martins" target="_blank" class="fa fa-fw fa-github"></a><a href="//www.facebook.com/joao.martins.9440" target="_blank" class="fa fa-fw fa-facebook"></a><a href="//www.twitter.com/1906/joao" target="_blank" class="fa fa-fw fa-twitter"></a><a href="//www.linkedin.com/pub/john-martins/2/26a/49a" target="_blank" class="fa fa-fw fa-linkedin"></a></div>
+                    <!--end .social-->
+          </div>
+          <div class="left col-xs-12 col-sm-6 col-sm-pull-6 text-center">
+            <div class="copyright">João Sousa Martins<br>&copy; 2014, All Rights Reserved.</div>
+            <!--end .copyright-->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/default.js" async="async"></script>
+  </body>
+</html>

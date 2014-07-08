@@ -57,10 +57,10 @@ section#home.full-screen
 --><?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Joao's Life Journal</title>
+    <title>Chronostasis</title>
     <atom:link href="Joao.io/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>Joao.io</link>
-    <description>Myself, for my future generations</description>
+    <description>My journal, for my future generations</description>
     <pubDate>Fri, 12 Apr 2013 12:00:00 -0700</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>

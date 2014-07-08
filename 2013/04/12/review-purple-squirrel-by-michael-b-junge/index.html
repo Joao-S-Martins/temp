@@ -60,7 +60,7 @@ section#home.full-screen
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>Review: Purple Squirrel by Michael B. Junge - Joao's Life Journal - Myself, for my future generations - Joao.io
+    <title>Review: Purple Squirrel by Michael B. Junge - Chronostasis - My journal, for my future generations - Joao.io
     </title>
     <!--link(rel='alternate', href='http://feeds.feedburner.com/slowtheory', type='application/rss+xml', title=locals.description)-->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/media/apple-touch-icon-144-precomposed.png">
@@ -70,15 +70,17 @@ section#home.full-screen
     <link rel="shortcut icon" href="/assets/media/favicon.ico">
     <!-- build:[href]:dist /styles/main.min.css -->
     <link rel="stylesheet" href="/temp/styles/main.min.css">
-    <script src="js/compiled.js"></script>
+    <!-- build:[src]:dist js/compiled.js-->
+    <script src="js/bundled.js"></script>
+    <!-- /build -->
   </head>
   <body>
     <header style="background-image:url(/posts/2013-04-12_1/splash.jpg)" class="splash">
       <div class="transparency">
-        <div class="container">
+        <div class="container text-right">
           <h1>Review: Purple Squirrel by Michael B. Junge
           </h1>
-          <h2 class="text-center">
+          <h2>
 Purple Squirrel by Michael B. Junge.
           </h2>
         </div>
@@ -87,6 +89,8 @@ Purple Squirrel by Michael B. Junge.
     <!--end .splash-->
     <nav role="navigation" class="navbar navbar-inverse">
       <div class="container">
+        <button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <!--end .navbar-toggle-->
         <div id="menu" role="navigation" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
@@ -106,16 +110,34 @@ Purple Squirrel by Michael B. Junge.
         .modal-content
         
     -->
-    <main class="container">
-      <section class="content row">
-        <!--article.col-xs-12.col-md-8-->
-        <article class="col-xs-12">
-          <header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <header class="col-xs-12 page-header">
             <h3>Review: Purple Squirrel by Michael B.&nbsp;Junge</h3>
             <p class="post-date"><i class="fa fa-calendar"></i><span style="margin-left:10px">April 12th, 2013</span>
             </p>
           </header>
-          <div class="post-content"><p><img src="/posts/2013-04-12_1/splash.jpg" alt="Cover image of Purple Squirrel by Michael B. Junge" title="Purple Squirrel by Michael B. Junge"></p>
+          <!--end header-->
+        </div>
+      </div>
+      <div class="content-container container">
+        <section id="content" class="row">
+          <aside class="col-xs-12 col-sm-1">
+            <div class="share"><a href="" class="fa fa-fw fa-facebook"></a><a href="" class="fa fa-fw fa-twitter"></a><a href="" class="fa fa-fw fa-linkedin"></a><a href="" class="fa fa-fw fa-google-plus"></a></div>
+            <!--end .share-->
+          </aside>
+          <!--article.col-xs-12.col-md-10-->
+          <article class="post col-xs-12 col-sm-10">
+            <!--header
+            h3!= typogr(page.title).typogrify()
+            p.post-date
+              i.fa.fa-calendar
+              - mmt = moment(page.metadata.date)
+              span(style='margin-left:10px')= env.helpers.utils.formatDate(mmt)
+            -->
+            <!--end header-->
+            <div class="post-content"><p><img src="/posts/2013-04-12_1/splash.jpg" alt="Cover image of Purple Squirrel by Michael B. Junge" title="Purple Squirrel by Michael B. Junge"></p>
 <p>Purple Squirrel by Michael B.&nbsp;Junge.</p>
 <hr>
 
@@ -126,15 +148,20 @@ Purple Squirrel by Michael B. Junge.
 <p>Even though I’ve been very familiar with online job search tools since I was in high school, I found this book to be very helpful and incredibly insightful during my last job search. I continue to work on the skills described in the third section to ensure that I remain prepared for my next job search. My favorite thing about this book is the detail put into the action items. After each of the many lessons that this book teaches, there are detailed action items to help the reader to apply the lessons immediately. This book tends to assume that the reader already has work experience, which isn’t ideal for college students, new grads, and people choosing to completely change careers. That said, I would still recommend this book to them as a guide to help them begin recording their accomplishments and build a portfolio and skill-set that could be utilized in their next job&nbsp;search.</p>
 <p><a href="http://wordpress.redirectingat.com/?id=725X584219&amp;site=jewow.wordpress.com&amp;xs=1&amp;isjs=1&amp;url=http%3A%2F%2Fwww.amazon.com%2FPurple-Squirrel-Interviews-Master-Modern%2Fdp%2F1467992607%2Fref%3Dsr_1_1%3Fie%3DUTF8%26qid%3D1365627253%26sr%3D8-1%26keywords%3Dpurple%2Bsquirrel&amp;xguid=76d23e84e3b61bba9f7734e868be6e73&amp;xcreo=0&amp;xed=0&amp;sref=http%3A%2F%2Fjewow.wordpress.com%2F2013%2F04%2F12%2Freview-purple-squirrel-by-michael-b-junge%2F%23more-40&amp;pref=http%3A%2F%2Fjewow.wordpress.com%2F&amp;xtz=420" title="Purple Squirrel by Michael B. Junge">Amazon</a><br><span class="caps">ISBN</span>-10: 1467992607<br><span class="caps">ISBN</span>-13: 978-1467992602</p>
 </div>
-        </article>
-        <!--aside.col-xs-12.col-md-4| aside stuff
+          </article>
+          <!--end .post-->
+        </section>
+        <!--end #content
+        //aside.col-xs-12.col-md-4
+          | aside stuff
         -->
-      </section>
-      <div class="row">
-        <ul class="pager text-center">
-          <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Newer post</a></li>
-          <li class="disabled next col-xs-6"><a>Older post <i class="fa fa-angle-double-right"></i></a></li>
-        </ul>
+        <div class="pagination row">
+          <ul class="pager text-center">
+            <li class="previous disabled col-xs-6"><a><i class="fa fa-angle-double-left"></i> Newer post</a></li>
+            <li class="disabled next col-xs-6"><a>Older post <i class="fa fa-angle-double-right"></i></a></li>
+          </ul>
+        </div>
+        <!--end .pagination-->
       </div>
       <!--.modal.fade.contact-modal
       .modal-dialog.modal-sm
@@ -165,71 +192,73 @@ Purple Squirrel by Michael B. Junge.
                     
       -->
     </main>
-    <footer class="container"><a href="#" class="fa fa-arrow-up toTop"></a>
-      <!--mixin author(authorName)
-      - var author = contents.authors[authorName + '.json']
-      span.author
-        if author
-          a(href='mailto:'+author.metadata.email)= author.metadata.name
-        else
-          =authorName
+    <footer>
+      <div class="container"><a href="#" class="fa fa-arrow-up toTop"></a>
+        <!--mixin author(authorName)
+        - var author = contents.authors[authorName + '.json']
+        span.author
+          if author
+            a(href='mailto:'+author.metadata.email)= author.metadata.name
+          else
+            =authorName
+            
+        -->
+        <!--mixin postThumb(post)
+        a(href!=post.url)
+          div.post.post-dimension
+            div.post-thumbnail.tint.post-dimension
+              img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
+            p.post-title= post.title
+            div.post-lower-section
+              div.post-line-left
+              div#post-date-wrap
+                p.post-date= post.date
+                  span.fycon-conversation.post-comment
+                  span.post-comment-count
+                    span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
+              div.post-line-right
+              
+              
+        -->
+        <!--mixin headSlider(title, imgUrl)
+        section#home.full-screen
+          div#slider
+            nav.slides-navigation
+            a.prev(href='#')
+            a.next(href='#')
+            ul.slides-container
+              li
+                div.image-caption
+                  div.inner
+                    h2.bigtext.strtoupper.nomargin title
+                div.fullscreen-img(style='background-image: ' + imgUrl)
+                
+                
+        -->
+        <!--mixin postModal(post)
+        // CSS Rules?
+        .modal-header
+          header
+            h2!= typogr(page.title).typogrify()
+            p.post-date
+              i.fa.fa-calendar
+              span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+          button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+        .modal-body
+          article.post-content!= typogr(page.html).typogrify()
+          .divider
           
-      -->
-      <!--mixin postThumb(post)
-      a(href!=post.url)
-        div.post.post-dimension
-          div.post-thumbnail.tint.post-dimension
-            img.attachment-post-thumbnail.wp-post-image(style='display: inline-block; width: 633px; height: 356px; margin-left: -80.5px; margin-top: 0px;', src!=post.img.src, alt!=post.img.alt, height='351', width='624')
-          p.post-title= post.title
-          div.post-lower-section
-            div.post-line-left
-            div#post-date-wrap
-              p.post-date= post.date
-                span.fycon-conversation.post-comment
-                span.post-comment-count
-                  span.livefyre-commentcount(data-post-id!=post.id)!= post.comments.count
-            div.post-line-right
-            
-            
-      -->
-      <!--mixin headSlider(title, imgUrl)
-      section#home.full-screen
-        div#slider
-          nav.slides-navigation
-          a.prev(href='#')
-          a.next(href='#')
-          ul.slides-container
-            li
-              div.image-caption
-                div.inner
-                  h2.bigtext.strtoupper.nomargin title
-              div.fullscreen-img(style='background-image: ' + imgUrl)
-              
-              
-      -->
-      <!--mixin postModal(post)
-      // CSS Rules?
-      .modal-header
-        header
-          h2!= typogr(page.title).typogrify()
-          p.post-date
-            i.fa.fa-calendar
-            span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
-        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
-      .modal-body
-        article.post-content!= typogr(page.html).typogrify()
-        .divider
-        
-        
-      -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-sm-push-6 text-center">
-                <div class="social"><a href="//www.github.com/joao-s-martins" class="fa fa-fw fa-github"></a><a href="//www.facebook.com/joao.martins.9440" class="fa fa-fw fa-facebook"></a><a href="//www.twitter.com/1906/joao" class="fa fa-fw fa-twitter"></a><a href="//www.linkedin.com/pub/john-martins/2/26a/49a" class="fa fa-fw fa-linkedin"></a></div>
-                <!--end .social-->
-        </div>
-        <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center">
-          <div class="copyright">Joao S. Martins<br></br>2014 © All Rights Reserved.<br></br>&copy; 2014, Joao Sousa Martins &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></div>
-          <!--end .copyright-->
+          
+        -->
+        <div class="row">
+          <div class="right col-xs-12 col-sm-6 col-sm-push-6 text-center">
+                    <div class="social"><a href="//www.github.com/joao-s-martins" target="_blank" class="fa fa-fw fa-github"></a><a href="//www.facebook.com/joao.martins.9440" target="_blank" class="fa fa-fw fa-facebook"></a><a href="//www.twitter.com/1906/joao" target="_blank" class="fa fa-fw fa-twitter"></a><a href="//www.linkedin.com/pub/john-martins/2/26a/49a" target="_blank" class="fa fa-fw fa-linkedin"></a></div>
+                    <!--end .social-->
+          </div>
+          <div class="left col-xs-12 col-sm-6 col-sm-pull-6 text-center">
+            <div class="copyright">João Sousa Martins<br>&copy; 2014, All Rights Reserved.</div>
+            <!--end .copyright-->
+          </div>
         </div>
       </div>
     </footer>

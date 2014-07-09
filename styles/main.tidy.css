@@ -677,10 +677,10 @@ main {
   }
 }
 
-.col-xs-12 {
-  padding-right: 5px;
-  padding-left: 5px;
-}
+/*.content, .col-xs-12 {
+    padding-right: 5px;
+    padding-left: 5px;
+}*/
 
 a,
 a:hover,
@@ -1015,6 +1015,8 @@ section ul li {
 
 .about-heading small {
   text-transform: none;
+  display: block;
+  text-indent: 80px;
 }
 
 .about {
@@ -1024,7 +1026,7 @@ section ul li {
 
 .about .left {
   margin-right: 16px;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .about .social {
@@ -1058,6 +1060,13 @@ section ul li {
   background-clip: content-box;
 }
 
+@media (max-width: 767px) {
+  .item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .item {
     margin-top: 16px;
@@ -1072,7 +1081,8 @@ section ul li {
   background-size: cover;
   background-position: center center;
   background-clip: content-box;
-  border: 1px solid black;
+  border: solid black;
+  border-width: 1px 0;
 }
 
 @media (min-width: 768px) {
@@ -1083,6 +1093,7 @@ section ul li {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+    border-width: 1px;
   }
 }
 
@@ -1101,9 +1112,9 @@ section ul li {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.35);
-  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.35);
   color: inherit;
   text-decoration: none;
 }
@@ -1201,7 +1212,7 @@ section ul li {
 
 .pager li > a {
   display: inline-block;
-  padding: 5px 14px;
+  padding: 5px 8px;
   background-color: #fff;
   border: 1px solid #ddd;
   -webkit-border-radius: 15px;
@@ -1210,9 +1221,9 @@ section ul li {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.25);
 }
 
 .pager .disabled > a,

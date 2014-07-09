@@ -13,6 +13,26 @@
 /*      Mixins                        */
 /**************************************/
 //TODO (joao) Varify/add with http://www.css3files.com/
+// Retina images
+//
+// Short retina mixin for setting background-image and -size
+
+.img-retina-local(@file-1x; @file-2x; @width-1x; @height-1x) {
+//Modified from Bootstrap
+  background-image: data-uri("@{file-1x}");
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    background-image: url("@{file-2x}");
+    background-size: @width-1x @height-1x;
+  }
+}
+
 .text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
     text-shadow: @string;
 }
@@ -160,6 +180,7 @@
 /**************************************/
 /*          Variables Override        */
 /**************************************/
+@uri-embed: '../contents/styles';
 //@font-family-sans-serif: "Liberation Sans", Helvetica, Arial, sans-serif;
 //@font-family-serif: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
 //@headings-font-family: 'Walter Turncoat', "Liberation Sans", Helvetica, Arial, sans-serif;
@@ -281,39 +302,39 @@ section ul, section ul li {
 /*          Backgrounds               */
 /**************************************/
 .greyzz() {
-    .img-retina('img/greyzz.png', 'img/greyzz_@2X.png', 149px, 139px);
+    .img-retina-local('@{uri-embed}/img/greyzz.png', 'img/greyzz_@2X.png', 149px, 139px);
     background-repeat: repeat;
     border: 0 solid #f1f1f1;
 }
 
 .tweed() {
-    .img-retina('img/tweed.png', 'img/tweed_@2X.png', 200px, 200px);
+    .img-retina-local('@{uri-embed}/img/tweed.png', 'img/tweed_@2X.png', 200px, 200px);
     background-repeat: repeat;
 }
 
 .congruent-outline() {
-    background-image: url('img/congruent_outline.png');
+    background-image: data-uri('@{uri-embed}/img/congruent_outline.png');
     background-size: 300px 300px;
     background-repeat: repeat;
 }
 
 .notebook() {
-    .img-retina('img/notebook.png', 'img/notebook_@2X.png', 300px, 154px);
+    .img-retina-local('@{uri-embed}/img/notebook.png', 'img/notebook_@2X.png', 300px, 154px);
     background-repeat: repeat;
 }
 
 .nice-snow() {
-    .img-retina('img/nice_snow.png', 'img/nice_snow_@2X.png', 250px, 250px);
+    .img-retina-local('@{uri-embed}/img/nice_snow.png', 'img/nice_snow_@2X.png', 250px, 250px);
     background-repeat: repeat;
 }
 
 .paper-fibers() {
-    .img-retina('img/paper_fibers.png', 'img/paper_fibers_@2X.png', 410px, 410px);
+    .img-retina-local('@{uri-embed}/img/paper_fibers.png', 'img/paper_fibers_@2X.png', 410px, 410px);
     background-repeat: repeat;
 }
 
 .lined-paper() {
-    .img-retina('img/linedpaper.png', 'img/linedpaper_@2X.png', 412px, 300px);
+    .img-retina-local('@{uri-embed}/img/linedpaper.png', 'img/linedpaper_@2X.png', 412px, 300px);
     background-repeat: repeat;
 }
 
@@ -423,7 +444,7 @@ section ul, section ul li {
     display: block;
     vertical-align: middle;
     &:before {
-        content: " ";
+        content: "";
         background-color: rgba(0, 0, 0, 0.25);
         width: 100%;
         height: 100%;
@@ -433,12 +454,12 @@ section ul, section ul li {
     .transparency {
         &:extend(.item-title);
         color: white;
-        position: relative;
+        position: absolute;
         display: inline-block;
         //left: 50%;
         //top: 40%;
         //.transform(translate(-50%, -60%));
-        bottom: 10em;
+        bottom: round(@navbar-height * 1.65);
     }
 }
 
@@ -549,7 +570,7 @@ section ul, section ul li {
         .opacity(0.35);
     }
     &:before {
-        content: " ";
+        content: "";
         position: absolute;
         background-color: rgba(0, 0, 0, 0.25);
         display: block;

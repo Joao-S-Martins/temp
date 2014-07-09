@@ -56,7 +56,7 @@ block splash
   - var preview = (typeof(preview) == 'string') ? preview.replace(/(<([^>]+)>)/ig,""):''
   - var preview = (typeof(preview) == 'string') ? typogr(preview.substring(0,600)).typogrify():''
   - var preview = (typeof(preview) == 'string') ? preview.substring(0,preview.lastIndexOf(".")+1):''
-  +Splash(page.metadata.photo, page.title, preview)
+  +Splash(page.metadata.photo, page.title)
 
 block header
   .container

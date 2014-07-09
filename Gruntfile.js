@@ -54,6 +54,9 @@ module.exports = function(grunt) {
       }
     },
     'cssUrlEmbed': {
+      options: {
+        excludeUrlExtensions: [ '@2X.png' ]
+      },
       encodeDirectly: {
         files: {
           'build/styles/main.embeded.css': ['build/styles/main.tidy.css']
@@ -63,7 +66,7 @@ module.exports = function(grunt) {
     'cssmin': {
       'combine': {
         files: {
-          'build/styles/main.min.css': ['build/styles/main.embeded.css']
+          'build/styles/main.min.css': ['build/styles/main.tidy.css']
         }
       }
     },
@@ -252,7 +255,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['build']);
 
   grunt.registerTask('js', ['closureCompiler:simple']);
-  grunt.registerTask('css', ['uncss','cssUrlEmbed','cssmin']);
+  grunt.registerTask('css', ['uncss','cssmin']);
   grunt.registerTask('html', ['processhtml','htmlmin']);
   grunt.registerTask('img', ['imagemin:backgrounds','imagemin:homeitems']);
   grunt.registerTask('deploy', ['build','gh-pages','shell:bump']);

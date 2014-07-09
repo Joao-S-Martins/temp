@@ -76,6 +76,7 @@ mixin feed(posts)
           //- passing locals.url resolves all relative urls to absolute
           description= post.getHtml(locals.url)
 
+
 mixin Splash(image, title, subtitle)
   header.splash(style='background-image:url('+ image +')')
     .transparency
@@ -88,6 +89,7 @@ mixin Splash(image, title, subtitle)
             = subtitle
   //end .splash
 
+
 mixin NavbarToggle(target)
   button.navbar-toggle(type='button', data-toggle='collapse', data-target=target)
     span.sr-only Toggle navigation
@@ -96,8 +98,10 @@ mixin NavbarToggle(target)
     span.icon-bar
   //end .navbar-toggle
 
+
 mixin MenuLink(text, link)
   li: a(href=link)= text
+
 
 mixin SiteMenu(id, classes)
   nav.navbar.navbar-inverse(role='navigation')

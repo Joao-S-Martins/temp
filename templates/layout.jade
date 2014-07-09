@@ -28,12 +28,12 @@ html(lang='en')
           }
 
       block blockingscripts
-        // build:[src] js/compiled.js
+        // build:[src]:dist js/compiled.js
         script(src='js/bundled.js')
         // /build 
   body(class=bodyclass)
     block splash
-      +Splash('', locals.name, locals.description)
+      +Splash('/styles/splash/newborn-2014.jpg', locals.name, locals.description)
 
     +SiteMenu('menu', [])
 

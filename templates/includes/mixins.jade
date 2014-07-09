@@ -102,6 +102,7 @@ mixin MenuLink(text, link)
 mixin SiteMenu(id, classes)
   nav.navbar.navbar-inverse(role='navigation')
     .container
+      +NavbarToggle('#'+id)
       .collapse.navbar-collapse(id=id, role='navigation')
         - cls = ['nav', 'navbar-nav']
         - if (classes)

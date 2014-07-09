@@ -111,7 +111,7 @@ module.exports = function(grunt) {
     },
     'imagemin': {
       options: {
-        optimizationLevel: 7,
+        optimizationLevel: 9,
         progressive: true
       },
       'backgrounds': {
@@ -120,6 +120,14 @@ module.exports = function(grunt) {
           cwd: 'build/styles/img',
           src: ['**/*.{png,jpg,gif}'],
           dest: 'build/styles/img'
+        }]
+      },
+      'splashes': {
+        files: [{
+          expand: true,
+          cwd: 'build/styles/splash',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'build/styles/splash'
         }]
       },
       'posts': {

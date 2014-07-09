@@ -239,10 +239,10 @@ main {
     .lined-paper();
 }
 
-.content, .col-xs-12 {
+/*.content, .col-xs-12 {
     padding-right: 5px;
     padding-left: 5px;
-}
+}*/
 
 .transition-bg {
     .transition(background 300ms);
@@ -503,6 +503,10 @@ section ul, section ul li {
     background-size: cover;
     background-position: center center;
     background-clip: content-box;
+    @media (max-width: @screen-xs-max) {
+        padding-left: 0;
+        padding-right: 0;
+    }
     @media (min-width: @screen-sm-min) {
         margin-top: 16px;
         &:last-child {
@@ -516,9 +520,11 @@ section ul, section ul li {
     background-size: cover;
     background-position: center center;
     background-clip: content-box;
-    border: 1px solid black;
+    border: solid black;
+    border-width: 1px 0;
     @media (min-width: @screen-sm-min) {
         .border-radius(6px);
+        border-width: 1px;
     }
 }
 
@@ -530,7 +536,7 @@ section ul, section ul li {
     //background-color: #999;
     background-size: cover;
     .border-radius(6px);
-    .drop-shadow(3px, 3px, 4px, 1px, 0.35);//(@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25);
+    .drop-shadow(0, 3px, 4px, 1px, 0.35);//(@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25);
     color: inherit;
     text-decoration: none;
     &:active, &:visited, &:focus {
@@ -623,11 +629,11 @@ section ul, section ul li {
         display: inline;
         &>a, &>span {
             display: inline-block;
-            padding: 5px 14px;
+            padding: 5px 8px;
             background-color: #fff;
             border: 1px solid #ddd;
             .border-radius(15px);
-            .drop-shadow(2px, 2px, 2px, 1px, 0.25);
+            .drop-shadow(0, 2px, 2px, 1px, 0.25);
         }
     }
     .disabled {

@@ -854,6 +854,7 @@ main {
   background-color: #fafafa;
   background-image: url("../contents/styles/img/linedpaper.png");
   background-repeat: repeat;
+  background-position: center top;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1188,8 +1189,11 @@ section ul li {
 
 @media (max-width: 767px) {
   .navbar {
-    position: fixed;
     top: 0px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
   }
 }
 

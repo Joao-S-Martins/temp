@@ -18,6 +18,7 @@
     "jquery": ">=1.9.0 <2",
     "jquery-throttle-debounce": "git://github.com/cowboy/jquery-throttle-debounce.git#v1.1",
     "less": "1.5.x",
+    "livefyre": "^1.1.4",
     "moment": "2.x",
     "twitter-bootstrap": "git://github.com/twbs/bootstrap.git#v3.1.1",
     "typogr": "0.6.x",

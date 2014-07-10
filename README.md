@@ -7,9 +7,10 @@ Joao's thoughts, digitized, to outlast Joao's mind.
 
 ###Wintersmith it
 - [ ] Port over old posts from Wordpress, Blogger, Facebook?
-- [ ] Get it working with dude's template
-  - [ ] Bootstrap it
+- [ ] Get it working like dude's template
+  - [x] Bootstrap it
 - [ ] Auto-copy fonts from node_modules/font-awesome/fonts to build/styles/fonts/
+- [ ] Create brandcolors.less repo for npm
 
 ###Improve it
 #####Template

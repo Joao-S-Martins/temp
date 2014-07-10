@@ -51,6 +51,9 @@ block styles
   link(rel='stylesheet', href='/styles/main.css', type='text/css', media='screen, projection, print')
   // /build 
 
+block append blockingscripts
+  script(src='http://cdn.livefyre.com/Livefyre.js')
+
 block splash
   - var preview = page.intro
   - var preview = (typeof(preview) == 'string') ? preview.replace(/(<([^>]+)>)/ig,""):''
@@ -91,3 +94,18 @@ block content
     .pagination.row
       +Paginator('post', prevPage, nextPage)
     //end .pagination
+    .row
+      .col-xs-12
+        //+Comments()
+
+block append asyncscripts
+  - networkName = env.config.livefyre.network.name
+  - networkKey = env.config.livefyre.network.key
+  - sideId = env.config.livefyre.site.id
+  - siteKey = env.config.livefyre.site.key
+  - articleId = (page.title + '-' + page.metadata.date).replace(/ /g, '_')
+  - title = page.title
+  - url = page.url
+  - tags = []
+  - collectionMeta = env.helpers.livefyre.getToken(networkName, networkKey, siteId, siteKey, title, url, tags)
+  +Sidenotes(networkName, sideId, articleId, collectionMeta, '.post-content')

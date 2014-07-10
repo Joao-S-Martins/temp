@@ -219,3 +219,47 @@ mixin Copyright()
     | &copy; #{ new Date().getFullYear() }, #{ locals.owner } &mdash; powered by&nbsp;
     a(href='https://github.com/jnordberg/wintersmith') Wintersmith
   //end .copyright
+
+
+mixin Sidenotes(networkName, sideId, articleId, collectionMeta, selectors)
+  script(type='text/javascript').
+    Livefyre.require(['sidenotes#v1'], function (Sidenotes) {
+      var articleId = 'http://localhost:4748/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeArticleId(null);
+      var url = 'http://joao.io/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeCollectionUrl();
+      var convConfig = {
+        selectors:'.post-content p',
+        siteId: "361602",
+        articleId: articleId,
+        collectionMeta: {
+            articleId: articleId,
+            url: url,
+        }
+      };
+
+       //New for Sidenotes (and different from LiveComments)
+      convConfig['network'] = "livefyre.com";
+      new Sidenotes(convConfig);
+    });
+  //end Sidenotes script
+
+mixin Comments()
+  // START: Livefyre Embed 
+  div#livefyre-comments
+  script(type="text/javascript",src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js")
+  script(type="text/javascript").
+    (function () {
+        var articleId = 'http://localhost:4748/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeArticleId(null);
+        var url = 'http://joao.io/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeCollectionUrl();
+        fyre.conv.load({}, [{
+            el: 'livefyre-comments',
+            network: "livefyre.com",
+            siteId: "361602",
+            articleId: articleId,
+            signed: false,
+            collectionMeta: {
+                articleId: articleId,
+                url: url,
+            }
+        }], function() {});
+    }());
+  // END: Livefyre Embed 

@@ -1,6 +1,7 @@
 var fs = require('fs');
 var util = require('util');
 var moment = require('moment');
+var livefyre = require('livefyre');
 module.exports = function(env, callback) {
 
     env.helpers.utils = {
@@ -9,6 +10,11 @@ module.exports = function(env, callback) {
         inherits: util.inherits,
         formatDate: getFormattedDate,
         formatTime: getFormattedTime
+    }
+
+    env.helpers.livefyre = {
+        getToken: lfGenerateMetaToken,
+        getChecksum: lfGenerateChecksum
     }
 
     /**
@@ -64,6 +70,26 @@ module.exports = function(env, callback) {
     function getFormattedTime(mmt) {
         mmt = mmt || moment();
         return (mmt.hour() === 0 && mmt.minute() === 0) ? 'TBD' : mmt.format("h:mm a");
+    }
+
+    /**
+     * Generates the Livefyre collection token
+     */
+    function lfGenerateMetaToken(networkName, networkKey, siteId, siteKey, title, articleId, url, tags, type) {
+        var network = livefyre.getNetwork(networkName, networkKey);
+        var site = network.getSite(siteId, siteKey);
+        var token =  site.buildCollectionMetaToken(title, articleId, url, tags, type);
+        return token;
+    }
+
+    /**
+     * Generates the Livefyre collection meta
+     */
+    function lfGenerateChecksum(networkName, networkKey, siteId, siteKey, title, url, tags) {
+        var network = livefyre.getNetwork(networkName, networkKey);
+        var site = network.getSite(siteId, siteKey);
+        var checksum = site.buildChecksum(title, url, tags);
+        return checksum;
     }
 
     return callback();

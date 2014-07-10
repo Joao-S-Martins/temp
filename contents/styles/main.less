@@ -339,6 +339,7 @@ section ul, section ul li {
 .lined-paper() {
     .img-retina-local('@{uri-embed}/img/linedpaper.png', 'img/linedpaper_@2X.png', 412px, 300px);
     background-repeat: repeat;
+    background-position: center top;
 }
 
 
@@ -490,8 +491,12 @@ section ul, section ul li {
     .congruent-outline();
     width: 100%;
     @media (max-width: @screen-xs-max) {
-        position: fixed;
         top: 0px;
+        //From .navbar-fixed-top
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
 }
 

@@ -59,32 +59,26 @@ section#home.full-screen
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Liz's wedding speech - Chronostasis - My journal, for my future generations - Joao.io
     </title>
     <!--link(rel='alternate', href='http://feeds.feedburner.com/slowtheory', type='application/rss+xml', title=locals.description)-->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/media/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/media/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/media/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/assets/media/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="/assets/media/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/temp/assets/media/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/temp/assets/media/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/temp/assets/media/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/temp/assets/media/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/temp/assets/media/favicon.ico">
     <!-- build:[href]:dist /styles/main.min.css -->
     <link rel="stylesheet" href="/temp/styles/main.min.css">
-    <!-- build:[src]:dist js/compiled.js-->
-    <script src="js/bundled.js"></script>
-    <!-- /build -->
+    <!-- build:[src]:dist /js/compiled.js-->
+    <script src="/temp/js/bundled.js"></script>
   </head>
   <body>
     <header style="background-image:url(/posts/2014-07-05_1/splash.jpg)" class="splash">
       <div class="transparency">
         <div class="container text-right">
-          <h1>Liz's wedding speech
+          <h1 class="col-xs-12 col-md-8 col-md-offset-4">Liz's wedding speech
           </h1>
-          <h2>I used to be the kind of an asshole that valued daughters differently than sons.
-It was a short-lived moment in my life, but it still happened. I used to think that my father-in-law hid himself in his storehouse, behind large saw blades and random amounts of wiring and plumbing equipment. I thougt he did this to scare away the daughters that he wasn’t ready to raise.
-But I was foolish.
-Little did I know of his work. Truly, he desired for his daughters to have the greatest that this life has to offer.
-          </h2>
         </div>
       </div>
     </header>
@@ -100,8 +94,14 @@ Little did I know of his work. Truly, he desired for his daughters to have the g
             <li><a href="/">Résumé</a></li>
             <li><a href="/">Projects</a></li>
             <li><a href="/">Contact</a></li>
-            <li><a href="/">Newsletter</a></li>
+            <!--+MenuLink('Newsletter', '/')-->
           </ul>
+          <form role="search" class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Search" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-default btn-xs">Submit</button>
+          </form>
         </div>
       </div>
     </nav>

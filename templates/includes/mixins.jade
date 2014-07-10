@@ -117,7 +117,11 @@ mixin SiteMenu(id, classes)
           +MenuLink('Résumé', '/')
           +MenuLink('Projects', '/')
           +MenuLink('Contact', '/')
-          +MenuLink('Newsletter', '/')
+          //+MenuLink('Newsletter', '/')
+        form.navbar-form.navbar-right(role='search')
+          .form-group
+            input.form-control(type='text',placeholder='Search')
+          button.btn.btn-default.btn-xs(type='submit') Submit
   //end .navbar
 
 

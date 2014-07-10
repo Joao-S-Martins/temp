@@ -259,21 +259,32 @@ $(document).ready(function () {
     require('bootstrap/js/collapse');
     //require('jquery.ba-throttle-debounce');
 
-    var $splash = $('.splash')
-    var ratio = 50;
-    var start = 50;
-    var height = $splash.height();
+    var $body = $('body'),
+        $nav = $('.navbar'),
+        $splash = $('.splash'),
+        ratio = 20,
+        start = 50;
     function splashScroll() {
         if (!$splash) {
             return;
         }
-        var scrollPos = $(this).scrollTop();
-        var newPos = Math.round(start + (ratio * (scrollPos / height)));
+        var scrollPos = $(window).scrollTop();
+        var newPos = Math.round(start + (ratio * (scrollPos / $splash.height())));
         $splash.css('background-position', '50% ' + newPos + '%');
     }
 
-    var throttled = $.throttle(100, false, splashScroll);
-    $(window).scroll(throttled);
+
+    function navFix() {
+        var offset = $splash.height() - $nav.height();
+        if ($(window).scrollTop() >= offset) {
+            $body.addClass('scroll');
+        } else {
+            $body.removeClass('scroll');
+        }
+    }
+
+    $(window).scroll($.throttle(110, false, splashScroll));
+    $(window).scroll($.throttle(110, false, navFix));
 });
 
  

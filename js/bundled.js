@@ -286,6 +286,21 @@ $(document).ready(function () {
 
     $(window).scroll($.throttle(110, false, splashScroll));
     $(window).scroll($.throttle(110, false, navFix));
+
+    function search() {
+        //https://www.google.com/search?q=site:joao.io+search+text
+        var term = $(this).find('input[type=text]').val();
+        if (!term) {
+            console.log('You need to specify text to search');
+            return;
+        }
+        var url = '//www.google.com/search?q=site:joao.io+';
+        url += term.trim().replace(/ /g, '+');
+        window.location.href = url;
+        return false;
+    }
+
+    $('.search').submit(search);
 });
 
  

@@ -88,6 +88,7 @@ body {
 }
 
 article,
+aside,
 footer,
 header,
 main,
@@ -105,6 +106,10 @@ a:focus {
 a:active,
 a:hover {
   outline: 0;
+}
+
+strong {
+  font-weight: bold;
 }
 
 h1 {
@@ -220,7 +225,7 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
@@ -285,8 +290,8 @@ h1 small {
 h1,
 h2,
 h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 22px;
+  margin-bottom: 11px;
 }
 
 h1 small {
@@ -294,19 +299,19 @@ h1 small {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 41px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 11px;
 }
 
 small {
@@ -322,9 +327,15 @@ small {
   text-align: center;
 }
 
+.page-header {
+  padding-bottom: 10px;
+  margin: 44px 0 22px;
+  border-bottom: 1px solid #eeeeee;
+}
+
 ul {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 ul ul {
@@ -361,11 +372,13 @@ ul ul {
   margin-right: -15px;
 }
 
+.col-sm-1,
 .col-lg-4,
 .col-xs-6,
 .col-sm-6,
 .col-lg-6,
 .col-md-8,
+.col-sm-10,
 .col-xs-12 {
   position: relative;
   min-height: 1px;
@@ -387,12 +400,22 @@ ul ul {
 }
 
 @media (min-width: 768px) {
-  .col-sm-6 {
+  .col-sm-1,
+  .col-sm-6,
+  .col-sm-10 {
     float: left;
+  }
+
+  .col-sm-10 {
+    width: 83.33333333333334%;
   }
 
   .col-sm-6 {
     width: 50%;
+  }
+
+  .col-sm-1 {
+    width: 8.333333333333332%;
   }
 
   .col-sm-pull-6 {
@@ -444,9 +467,9 @@ ul ul {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 36px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.428571429;
   color: #555555;
   background-color: #ffffff;
@@ -495,7 +518,7 @@ ul ul {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.428571429;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -545,7 +568,7 @@ ul ul {
 
 .btn-xs {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -686,13 +709,13 @@ ul ul {
 }
 
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 7px -15px;
 }
 
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 @media (min-width: 768px) {
@@ -706,8 +729,8 @@ ul ul {
   }
 
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 
@@ -726,8 +749,8 @@ ul ul {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 @media (min-width: 768px) {
@@ -847,10 +870,10 @@ main {
   }
 }
 
-/*.content, .col-xs-12 {
-    padding-right: 5px;
-    padding-left: 5px;
-}*/
+button.fa-print {
+  background-color: transparent;
+  border-color: #333333;
+}
 
 a,
 a:hover,
@@ -989,8 +1012,16 @@ section ul li {
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 
+.fa-print:before {
+  content: "\f02f";
+}
+
 .fa-arrow-up:before {
   content: "\f062";
+}
+
+.fa-calendar:before {
+  content: "\f073";
 }
 
 .fa-twitter:before {
@@ -1003,6 +1034,10 @@ section ul li {
 
 .fa-github:before {
   content: "\f09b";
+}
+
+.fa-google-plus:before {
+  content: "\f0d5";
 }
 
 .fa-linkedin:before {
@@ -1043,8 +1078,29 @@ section ul li {
   margin-right: 0;
 }
 
+.share {
+  font-size: 1.8em;
+}
+
+.share .fa {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.share .fa:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .share .fa {
+    display: block;
+  }
+}
+
 .fa-facebook,
 .fa-github,
+.fa-google-plus,
 .fa-linkedin,
 .fa-twitter {
   color: #999999;
@@ -1067,6 +1123,12 @@ section ul li {
   color: #fff;
   background-color: #4183c4;
   border-color: #4183c4;
+}
+
+.fa-google-plus:hover {
+  color: #fff;
+  background-color: #dd4b39;
+  border-color: #dd4b39;
 }
 
 .fa-linkedin:hover {
@@ -1196,6 +1258,15 @@ section ul li {
 /*          Blog view                 */
 
 /**************************************/
+
+.post img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+}
 
 .item {
   color: #fff;

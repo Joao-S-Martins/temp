@@ -72,7 +72,9 @@ section#home.full-screen
     <link rel="stylesheet" href="/temp/styles/main.min.css">
     <!-- build:[src]:dist /js/compiled.js-->
     <script src="/temp/js/bundled.js"></script>
-    <script src="http://cdn.livefyre.com/Livefyre.js"></script>
+    <script src="//cdn.livefyre.com/Livefyre.js"></script>
+    <!--script(src='http://cdn.livefyre.com/libs/fyre.conv.load.js')-->
+    <script src="//cdn.livefyre.com/libs/auth-delegates/v0.4.4-beta/auth-delegates.min.js"></script>
   </head>
   <body>
     <header style="background-image:url(/posts/2013-04-03_1/splash.jpg)" class="splash">
@@ -90,14 +92,14 @@ section#home.full-screen
         <!--end .navbar-toggle-->
         <div id="menu" role="navigation" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Categories</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Tags</a></li>
             <li><a href="/">Résumé</a></li>
             <li><a href="/">Projects</a></li>
             <li><a href="/">Contact</a></li>
             <!--+MenuLink('Newsletter', '/')-->
           </ul>
-          <form role="search" class="navbar-form navbar-right">
+          <form role="search" class="navbar-form navbar-right search">
             <div class="form-group">
               <input type="text" placeholder="Search" class="form-control"></input>
             </div>
@@ -118,7 +120,8 @@ section#home.full-screen
         <div class="row">
           <header class="col-xs-12 page-header">
             <h3>Apple Pie Moonshine&nbsp;Recipe</h3>
-            <p class="post-date"><i class="fa fa-calendar"></i><span style="margin-left:10px">April 3rd, 2013</span>
+            <p class="post-date"><i class="fa fa-calendar"></i><span style="margin-left:1em;margin-right:3em">April 3rd, 2013</span>
+              <button href="javascript:window.print();return false;" title="Print this page" class="btn fa fa-print"></button>
             </p>
           </header>
           <!--end header-->
@@ -183,7 +186,27 @@ section#home.full-screen
         <!--end .pagination-->
         <div class="row">
           <div class="col-xs-12">
-            <!--+Comments()-->
+            <!-- START: Livefyre Embed -->
+            <div id="livefyre-comments"></div>
+            <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+            <script type="text/javascript">
+              (function () {
+                  var articleId = 'http://localhost:4748/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeArticleId(null);
+                  var url = 'http://joao.io/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeCollectionUrl();
+                  fyre.conv.load({}, [{
+                      el: 'livefyre-comments',
+                      network: "livefyre.com",
+                      siteId: "361602",
+                      articleId: articleId,
+                      signed: false,
+                      collectionMeta: {
+                          articleId: articleId,
+                          url: url,
+                      }
+                  }], function() {});
+              }());
+            </script>
+            <!-- END: Livefyre Embed -->
           </div>
         </div>
       </div>
@@ -289,11 +312,16 @@ section#home.full-screen
     <script src="js/default.js" async="async"></script>
             <script type="text/javascript">
               Livefyre.require(['sidenotes#v1'], function (Sidenotes) {
+                var network = 'livefyre.com';
+                var siteId = '361602';
                 var articleId = 'http://localhost:4748/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeArticleId(null);
                 var url = 'http://joao.io/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeCollectionUrl();
+                //var authDelegate = new fyre.conv.LivefyreAuthDelegate(articleId, "361602", 'http://www.fyre');
+                var delegate = new Livefyre.authDelegates.Livefyre(articleId, siteId, 'http://' + network);
                 var convConfig = {
                   selectors:'.post-content p',
-                  siteId: "361602",
+                  siteId: siteId,
+                  authDelegate: delegate,
                   articleId: articleId,
                   collectionMeta: {
                       articleId: articleId,
@@ -302,7 +330,7 @@ section#home.full-screen
                 };
                 
                  //New for Sidenotes (and different from LiveComments)
-                convConfig['network'] = "livefyre.com";
+                convConfig['network'] = network;
                 new Sidenotes(convConfig);
               });
             </script>

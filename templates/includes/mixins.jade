@@ -112,13 +112,13 @@ mixin SiteMenu(id, classes)
         - if (classes)
         -   cls = cls.concat(classes)
         ul(class=cls.join(' '))
-          +MenuLink('Home', '/')
-          +MenuLink('Categories', '/')
+          +MenuLink('Blog', '/')
+          +MenuLink('Tags', '/')
           +MenuLink('Résumé', '/')
           +MenuLink('Projects', '/')
           +MenuLink('Contact', '/')
           //+MenuLink('Newsletter', '/')
-        form.navbar-form.navbar-right(role='search')
+        form.navbar-form.navbar-right.search(role='search')
           .form-group
             input.form-control(type='text',placeholder='Search')
           button.btn.btn-default.btn-xs(type='submit') Submit
@@ -154,7 +154,7 @@ mixin Breadcrumb(list)
   //-@param list {Array.<{name: !string, href: string=}>}
   ol.breadcrumb
     for item, idx in list
-      if idx < list.length - 1
+      unless idx === list.length - 1
         li: a(href=item.href)= item.name
       if idx === list.length - 1
         li.active= item.name
@@ -224,11 +224,16 @@ mixin Copyright()
 mixin Sidenotes(networkName, sideId, articleId, collectionMeta, selectors)
   script(type='text/javascript').
     Livefyre.require(['sidenotes#v1'], function (Sidenotes) {
+      var network = 'livefyre.com';
+      var siteId = '361602';
       var articleId = 'http://localhost:4748/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeArticleId(null);
       var url = 'http://joao.io/2013/04/03/apple-pie-moonshine-recipe/';//fyre.conv.load.makeCollectionUrl();
+      //var authDelegate = new fyre.conv.LivefyreAuthDelegate(articleId, "361602", 'http://www.fyre');
+      var delegate = new Livefyre.authDelegates.Livefyre(articleId, siteId, 'http://' + network);
       var convConfig = {
         selectors:'.post-content p',
-        siteId: "361602",
+        siteId: siteId,
+        authDelegate: delegate,
         articleId: articleId,
         collectionMeta: {
             articleId: articleId,
@@ -237,7 +242,7 @@ mixin Sidenotes(networkName, sideId, articleId, collectionMeta, selectors)
       };
 
        //New for Sidenotes (and different from LiveComments)
-      convConfig['network'] = "livefyre.com";
+      convConfig['network'] = network;
       new Sidenotes(convConfig);
     });
   //end Sidenotes script

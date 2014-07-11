@@ -181,11 +181,12 @@
 /*          Variables Override        */
 /**************************************/
 @uri-embed: '../contents/styles';
+@font-size-base: 16px;
+
 //@font-family-sans-serif: "Liberation Sans", Helvetica, Arial, sans-serif;
 //@font-family-serif: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
 //@headings-font-family: 'Walter Turncoat', "Liberation Sans", Helvetica, Arial, sans-serif;
 //@headings-font-weight: bold;
-//@font-size-base: 12px;
 
 //Responsive updates
 //@screen-sm: 718px;//Smaller sm makes things a little poopy
@@ -263,10 +264,10 @@ main {
     }
 }
 
-/*.content, .col-xs-12 {
-    padding-right: 5px;
-    padding-left: 5px;
-}*/
+button.fa-print {
+    background-color: transparent;
+    border-color: @text-color;
+}
 
 .transition-bg {
     .transition(background 300ms);

@@ -52,7 +52,9 @@ block styles
   // /build 
 
 block append blockingscripts
-  script(src='http://cdn.livefyre.com/Livefyre.js')
+  script(src='//cdn.livefyre.com/Livefyre.js')
+  //script(src='http://cdn.livefyre.com/libs/fyre.conv.load.js')
+  script(src='//cdn.livefyre.com/libs/auth-delegates/v0.4.4-beta/auth-delegates.min.js')
 
 block splash
   - var preview = page.intro
@@ -69,7 +71,8 @@ block header
         p.post-date
           i.fa.fa-calendar
           - mmt = moment(page.metadata.date)
-          span(style='margin-left:10px')= env.helpers.utils.formatDate(mmt)
+          span(style='margin-left:1em;margin-right:3em')= env.helpers.utils.formatDate(mmt)
+          button.btn.fa.fa-print(href='javascript:window.print();return false;',title='Print this page')
         //-+Breadcrumb([{name:'blog',href:'/'},{name:page.title}])
       //end header
 block content
@@ -96,7 +99,7 @@ block content
     //end .pagination
     .row
       .col-xs-12
-        //+Comments()
+        +Comments()
 
 block append asyncscripts
   - networkName = env.config.livefyre.network.name

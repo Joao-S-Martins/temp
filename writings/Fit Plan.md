@@ -12,13 +12,13 @@ MWF
 - 10 min stretch
 #### Circuit
 - 12 dumbell squats @25
-- 10 dumbbell bench presses @40
+- 10 dumbbell bench presses @45
 - 10 bentover rows @25
-- 12 dumbbell alternating lunges @15
+- 12 dumbbell alternating reverse lunges @15
 - 10 dumbbell shoulder presses @15
 - 10 lateral bar @47.5
 - 15 hanging knee raise or leg pull-in or dead bug
-- 20 glute bridge @25
+- 20 glute bridge w/ foam roller under shoulders
 
 ### Rest days
 **There are NO rest days!**

@@ -16,7 +16,7 @@ MWF
 - 10 bentover rows @25
 - 12 dumbbell alternating reverse lunges @15
 - 10 dumbbell shoulder presses @15
-- 10 lateral bar @47.5
+- 10 lateral bar @52.5
 - 15 hanging knee raise or leg pull-in or dead bug
 - 20 glute bridge w/ foam roller under shoulders
 
@@ -33,6 +33,12 @@ SuTThSa
 
 ## Diet
 Based on learnings from my Whole 30 experience.
+
+### Cutting Target numbers
+- 1532 Kcals
+- 153g Protein 40%
+- 77g Carbs 20%
+- 68g Fats 40%
 
 ### Bad stuff
 - Added sugars
@@ -90,5 +96,5 @@ Save these for family, FAASL, and work events.
 - [The No-Fuss, Build-Your-Own Ab Workout](https://www.bodybuilding.com/content/the-no-fuss-build-your-own-ab-workout.html?mcid=EM_NL_072317-SUNDAY-NL_bodybldg.93830&rmid=EM_072317_SUNDAY_NL&rrid=1321836&CIMID=4959885&utm_source=&utm_medium=email&utm_campaign=bodybldg.93830 "The No-Fuss, Build-Your-Own Ab Workout")
 - [another one with a title](http://lmgtfy.com/ "Hello, world")
 - [7 Ways to Fix Anterior Pelvic Tilt](https://www.t-nation.com/training/7-ways-to-fix-anterior-pelvic-tilt, "7 Ways to Fix Anterior Pelvic Tilt")
-- [5 Steps for Dealing With Anterior Pelvic Tilt](https://www.theptdc.com/2014/06/5-steps-dealing-anterior-pelvic-tilt/, "5 Steps for Dealing With Anterior Pelvic Tilt")
-
+- [5 Steps for Dealing With Anterior Pelvic Tilt](https://www.theptdc.com/2014/06/5-steps-dealing-anterior-pelvic-tilt/ "5 Steps for Dealing With Anterior Pelvic Tilt")
+- [Get Big And Ripped Twice As Fast!](https://www.bodybuilding.com/fun/get-big-and-ripped-twice-as-fast.html?mcid=EM_PE_032818-FatBurnerSale_bodybldg.119586&rmid=EM_032818-ShredSale&rrid=1321836&CIMID=4959885&utm_source=&utm_medium=email&utm_campaign=bodybldg.119586 "Get Big And Ripped Twice As Fast!")

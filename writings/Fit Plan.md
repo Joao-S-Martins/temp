@@ -33,10 +33,16 @@ SuWSa
 Based on learnings from my Whole 30 experience.
 
 ### Cutting Target numbers
-- 1532 Kcals
+- 1,532 Kcals
 - 153g Protein 40%
 - 77g Carbs 20%
 - 68g Fats 40%
+
+### Building Target numbers
+- 2,420 Kcals
+- 212g Protein 35%
+- 121g Carbs 20%
+- 121g Fat 45%
 
 ### Bad stuff
 - Added sugars

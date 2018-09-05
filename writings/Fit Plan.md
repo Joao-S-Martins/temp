@@ -8,7 +8,7 @@ MTuThF
 - 4 min walk
 - 6 min jog
 - 2 min walk cooldown
-- Rock & pebble, 3-5 supersets, cycling one combo per workout
+- Rock & pebble, 3 supersets to failure @about 8-10 reps with rest-pause or final drop set, cycling one combo per workout
     + Barbell Squat w/ dumbell bicep curls
     + Cable row w/ cable leg curls
     + Deadlift w/ tricep presses

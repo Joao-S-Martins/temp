@@ -2,27 +2,27 @@
 
 ## Workout
 Burn some calories every day!
+100 push-ups a day!
 
 ### Weight days
-MTuThF
+MWF
 - 4 min walk
 - 6 min jog
 - 2 min walk cooldown
-- Rock & pebble, 3 supersets to failure @about 8-10 reps with rest-pause or final drop set, cycling one combo per workout
-    + Barbell Squat w/ dumbell bicep curls
-    + Cable row w/ cable leg curls
-    + Deadlift w/ tricep presses
-    + Incline benchpress w/ cable leg extensions
-- Sand, 1 set to failure, each exercise every workout
-    + Hanging leg raises
-    + Pulldowns or facepulls
+- Circuit
+    + Lateral raise, 10-12
+    + Dumbbell squat, 15-20
+    + Single-arm dumbbell row, 10-12
+    + Incline bench press, 10-12
+    + Wide-grip chin-up, 10-12
+    + Glute bridge, 20
 - 10 min stretch
 
 ### Rest days
 **There are NO rest days!**
 
 ### Non-weight days
-SuWSa
+TuThSaSu
 - 30 min of long cardio or 15 min of HIIT
     + Mix fast walking, jogging, rowing, dancing, biking, stairs, etc...
 - 10 min Bodyweight work
@@ -31,6 +31,7 @@ SuWSa
 
 ## Diet
 Based on learnings from my Whole 30 experience.
+16/8 intermittent fasting.
 
 ### Cutting Target numbers
 - 1,532 Kcals
@@ -104,3 +105,6 @@ Save these for family, FAASL, and work events.
 - [Get Big And Ripped Twice As Fast!](https://www.bodybuilding.com/fun/get-big-and-ripped-twice-as-fast.html?mcid=EM_PE_032818-FatBurnerSale_bodybldg.119586&rmid=EM_032818-ShredSale&rrid=1321836&CIMID=4959885&utm_source=&utm_medium=email&utm_campaign=bodybldg.119586 "Get Big And Ripped Twice As Fast!")
 - [Get Big And Ripped Twice As Fast!](https://www.bodybuilding.com/fun/get-big-and-ripped-twice-as-fast.html?mcid=EM_PE_032818-FatBurnerSale_bodybldg.119586&rmid=EM_032818-ShredSale&rrid=1321836&CIMID=4959885&utm_source=&utm_medium=email&utm_campaign=bodybldg.119586 "Get Big And Ripped Twice As Fast!")
 - [Big Rocks, Pebbles, And Sand: Simple Programming For Lasting Gains](https://www.bodybuilding.com/content/big-rocks-pebbles-and-sand-simple-programming-for-lasting-gains.html?mcid=EM_PE_042518-SuppsYouNeed_bodybldg.122776&rmid=EM_042518-SuppsYouNeed&rrid=1321836&CIMID=4959885&utm_source=&utm_medium=email&utm_campaign=bodybldg.122776 "Big Rocks, Pebbles, And Sand: Simple Programming For Lasting Gains")
+- [The 5 Best Exercises For Your Body Type](https://www.bodybuilding.com/content/the-5-best-exercises-for-your-body-type.html?mcid=EM_NL_100117-SUNDAY-NL_bodybldg.100678&rmid=EM_100117_SUNDAY_NL&rrid=1321836&CIMID=4959885&utm_source=&utm_medium=email&utm_campaign=bodybldg.100678, "The 5 Best Exercises For Your Body Type")
+[You Can't Out-Diet Your Training](https://www.bodybuilding.com/content/you-cant-out-diet-your-training.html?mcid=EM_NL_100117-SUNDAY-NL_bodybldg.100678&rmid=EM_100117_SUNDAY_NL&rrid=1321836&CIMID=4959885&utm_source=&utm_medium=email&utm_campaign=bodybldg.100678, "You Can't Out-Diet Your Training")
+[The Cure For Gluteal Amnesia? This "Buns And Guns" Workout](https://www.bodybuilding.com/content/the-cure-for-gluteal-amnesia-this-buns-and-guns-workout.html?mcid=EM_NL_031818-SundayNewsletter_bodybldg.118495&rmid=EM_031818_SundayNewsletter&rrid=1321836&CIMID=4959885&utm_source=&utm_medium=email&utm_campaign=bodybldg.118495, "The Cure For Gluteal Amnesia? This "Buns And Guns" Workout")

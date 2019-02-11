@@ -1,37 +1,44 @@
 # Fit Plan
 
 ## Workout
-Burn some calories every day!
-100 push-ups a day!
+Light work. Increase intensity monthly to prevent plateau.
 
 ### Weight days
 MWF
-- 4 min walk
-- 6 min jog
-- 2 min walk cooldown
-- Circuit
-    + Lateral raise, 10-12
-    + Dumbbell squat, 15-20
-    + Single-arm dumbbell row, 10-12
-    + Incline bench press, 10-12
-    + Wide-grip chin-up, 10-12
-    + Glute bridge, 20
-- 10 min stretch
+- 25m bike +5m cooldown
+- Superset
+  - Incline benchpress
+  - Incline dumbbell row
+- Triset
+  - Lying tricep extensions
+  - Bicep curls
+  - Lateral raises
+- 5 min stretch
 
 ### Rest days
-**There are NO rest days!**
-
-### Non-weight days
-TuThSaSu
-- 30 min of long cardio or 15 min of HIIT
-    + Mix fast walking, jogging, rowing, dancing, biking, stairs, etc...
-- 10 min Bodyweight work
-    + Pushups, reverse lunges, pullups, crunches
-- 5 min stretch
+TThSaSu
+- 100 push-ups
 
 ## Diet
 Based on learnings from my Whole 30 experience.
-16/8 intermittent fasting.
+- Avoid grains, folic acid, legumes, and coffee daily
+- Avoid artificial ingredients and unnatural oils
+- No alcohol
+- 2 servings of fruit daily
+- 2 servings of dairy weekly
+- 2 sweets weekly
+
+### Good stuff
+- Sweet potato
+- Grass-fed beef fat
+- Omnivore chicken eggs
+- Walnuts
+- Almonds
+- Pistachios
+- Vitamins
+- Fruits
+- Vegetables
+- Natural b-12 & omega-3
 
 ### Cutting Target numbers
 - 1,532 Kcals
@@ -44,32 +51,6 @@ Based on learnings from my Whole 30 experience.
 - 212g Protein 35%
 - 121g Carbs 20%
 - 121g Fat 45%
-
-### Bad stuff
-- Added sugars
-- Folic acid & enriched flour
-- Legumes
-- Grains
-- Social drinking!!!
-
-### Good stuff
-- Sweet potato
-- Grass-fed beef fat
-- Omnivore chicken eggs
-- Walnuts
-- Almonds
-- Pistachios
-- Vitamins
-- Fruits
-- Vegetables
-- Sleep!!!
-- Natural b312 & omega-3
-
-### Occasional stuff
-- Coffee
-- Dairy
-- Dried fruits
-- Booze
 
 ### Meal Outline
 20/40/40 carbs/protein/fat, per my naturopath.
@@ -93,7 +74,6 @@ Based on learnings from my Whole 30 experience.
 - Fruit
 #### Cheat Meals
 Save these for family, FAASL, and work events.
-
 
 ###### refs
 - [Training Tips To Match Your Body Type](https://www.bodybuilding.com/content/training-tips-to-match-your-body-type.html?mcid=EM_PE_072817-3DayKagedMuscleSale_bodybldg.94304&rmid=EM_072817_KagedMuscleWeekendSale&rrid=1321836&CIMID=4959885&utm_source=&utm_medium=email&utm_campaign=bodybldg.94304 "Training Tips To Match Your Body Type")

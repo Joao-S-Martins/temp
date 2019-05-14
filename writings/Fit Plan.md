@@ -5,15 +5,13 @@ Light work. Increase intensity monthly to prevent plateau.
 
 ### Weight days
 MWF
-- 25m bike +5m cooldown
-- Superset
-  - Incline benchpress
-  - Incline dumbbell row
+- 15m bike +5m cooldown
+- 5x5 for 20min
 - Triset
-  - Lying tricep extensions
+  - Tricep extensions
   - Bicep curls
   - Lateral raises
-- 5 min stretch
+- 15 min stretch
 
 ### Rest days
 TThSaSu
@@ -24,7 +22,7 @@ Based on learnings from my Whole 30 experience.
 - Avoid grains, folic acid, legumes, and coffee daily
 - Avoid artificial ingredients and unnatural oils
 - No alcohol
-- 2 servings of fruit daily
+- 1-2 servings of fruit daily
 - 2 servings of dairy weekly
 - 2 sweets weekly
 

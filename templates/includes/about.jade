@@ -1,0 +1,31 @@
+include ./mixins
+.about-wrapper
+  .about-container.container
+    .about-row.row
+      article.about.col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
+        //.left
+          img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?s=160',height=160,width=160)
+          //img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=wavatar&s=160&f=y')
+          //img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=identicon&s=160&f=y')
+          //img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=monsterid&s=160&f=y')
+          +SocialLinks()
+        .right
+          h1.about-heading About João Martins 
+            small John Martins
+          .left
+            img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?s=160',height=160,width=160)
+            //img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=wavatar&s=160&f=y')
+            //img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=identicon&s=160&f=y')
+            //img(src='http://www.gravatar.com/avatar/9e2a4dace8df842754b664863d95e2a3?d=monsterid&s=160&f=y')
+            +SocialLinks()
+          p.
+            I'm a software engineer working around the San Francisco Bay.
+            Some might call me full-stack, but I prefer front-focused.
+            I've been with JavaScript since back when folks thought it was a joke, and have added Java, perl, PHP, and python as-needed.
+          p.
+            As much as I'd like to say that this site exists to better the sofware community, it really doesn't.
+            It's just about me; my experiences, lessons, and thoughts to be shared beyond what my physical being is capable of.
+      //end .about
+    //end .about-row
+  //end .about-container
+//end.about-wrapper

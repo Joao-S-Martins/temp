@@ -1,0 +1,622 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"includes"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"so",
+				"social-color"
+			],
+			[
+				"item",
+				"item-thumb"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"te",
+				"text-right"
+			],
+			[
+				"c",
+				"content"
+			],
+			[
+				"joao",
+				"joao-s-martins"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"foot",
+				"footer-links"
+			],
+			[
+				"m",
+				"menu"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"itm",
+				"item-separator"
+			],
+			[
+				"fund",
+				"_fundraiserNote"
+			],
+			[
+				"L",
+				"Leandro"
+			],
+			[
+				"fun",
+				"fundraisers"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"head",
+				"header-wrapper"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"t",
+				"table-cell"
+			],
+			[
+				"ta",
+				"table-row"
+			],
+			[
+				"fyre",
+				"fyre-left"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"fy",
+				"fyre-left"
+			],
+			[
+				"hide",
+				"hideClones"
+			],
+			[
+				"show",
+				"showClones"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"qu",
+				"queue"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"siz",
+				"font-size"
+			],
+			[
+				"link",
+				"link"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"queue",
+				"queue-list"
+			],
+			[
+				"table",
+				"table-row"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"right",
+				"right-fluid"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"list",
+				"list-style-position"
+			],
+			[
+				"min",
+				"min-width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/config.json",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/package.json",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/Gruntfile.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/README.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/styles/raw.less",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/sardine-dinner-thanks/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/layout.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/mixins.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/styles/default.css",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/js/default.js",
+		"/Users/joaomartins/Documents/personal/dev/test/www.slowtheory.com/templates/default.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/config.json",
+		"/Users/joaomartins/Documents/personal/dev/test/package.json",
+		"/Users/joaomartins/Documents/personal/dev/test/Gruntfile.js",
+		"/Users/joaomartins/Documents/personal/dev/test/README.md",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/styles/main.less",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/mixins.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/plugins/paginator.js",
+		"/Users/joaomartins/Documents/personal/dev/test/node_modules/wintersmith/src/plugins/page.coffee",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/layout.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/blog.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/post.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/article.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/index.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/default.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/plugins/helpers.js",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/posts/2013-04-12_1/index.md",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/posts/2013-04-06_1/index.md",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/posts/2013-04-03_1/index.md",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/includes/footer.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/includes/favicon.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/includes/meta.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/templates/includes/about.jade",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/styles/brandcolors.less",
+		"/Users/joaomartins/Documents/personal/dev/test/plugins/paginator.coffee",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/articles/bamboo-cutter/index.md",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/posts/apple-pie/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/robots.txt",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/sitemap.xml",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/humans.txt",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/performances.json",
+		"/Users/joaomartins/Documents/personal/dev/test/readme.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/js/bundled.js",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/js/bunded.js",
+		"/Users/joaomartins/Documents/personal/dev/test/.gitignore",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/.gitignore",
+		"/Users/joaomartins/Documents/personal/dev/test/contents/articles/red-herring/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/utils.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/css/screen.css",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/directify.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/homepage.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/eventspage.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/index.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less/variables.less",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less/mixins.less",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/vendor/google/closure/externs/requires.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build/about.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/vendor/google/closure/externs/bootstrap.js",
+		"/Users/joaomartins/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build/index.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/events.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/filarmonica/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/index.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/page.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/about.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/contact.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/lessons.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/volunteer.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/Gruntfile.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less/navbar.less",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/dist/css/bootstrap.css",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/fundraisers.json",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/sardine-dinner/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/beef-a-portuguesa/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/shrimp-boil/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/lessons.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/volunteer.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/events.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/contact.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/about.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build/events.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/externs/jquery.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/cozida-portuguesa/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build/js/bundled.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/js/bootstrap.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/js/jquery.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/post-anniversary/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/members-dinner/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/lajense-dinner/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/filhoes/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/fatima/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/crab-feed/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/chicken-dinner/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/homeitems/casino/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/fundraiser-note.jad",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/upcoming.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/plugins/directory.js",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/directory.json",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/templates/item.jade",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/index.md",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/contents/events.json",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/istanbul.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/css/glyphicons.css",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/css/main.css",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/index.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/list.json",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/start.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/liar.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/never-covered.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/confirmation.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/problem.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/cycle.html",
+		"/Users/joaomartins/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/feedback.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/release.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/testing.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/execution.html",
+		"/Users/joaomartins/Documents/personal/dev/istanbul/steps/product.html",
+		"/Users/joaomartins/Documents/personal/dev/faasl/www/static/images/credits.txt",
+		"/Users/joaomartins/Downloads/autocompleteremotedata (1).js",
+		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/widget/windowcontroller.js",
+		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/widget/keyboardcontroller.js",
+		"/Users/joaomartins/dev/lfmod/lfpb/lfpbjs/node_modules/mocha/node_modules/debug/component.json",
+		"/Users/joaomartins/Downloads/autocompleteremotedata.js",
+		"/Users/joaomartins/dev/lfmod/src/soy/task.soy",
+		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/task/ui/tabbar.js",
+		"/Users/joaomartins/dev/lfmod/src/javascript/fyre/mod/app/mobilewidgetlibrary.js",
+		"/Users/joaomartins/dev/lfmod/src/soy/widget.soy"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less/",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/build",
+			"/Users/joaomartins/Documents/personal/dev/faasl/www/wintersmith/node_modules/bootstrap/less",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"mmt",
+			"//",
+			".fa-fw.",
+			".fa.",
+			"article",
+			"push",
+			"fa-2x",
+			"//",
+			"fa-3x",
+			".fa-2x",
+			"@import \"",
+			"fycon-source-",
+			"social",
+			".lf ",
+			"fycon-url",
+			"a",
+			"tran",
+			"disabled",
+			".pager ",
+			"previous",
+			"\"",
+			"post",
+			"div",
+			"post",
+			"    ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"article",
+			"index.html",
+			"locals",
+			"faasl",
+			"**",
+			"photo",
+			"index",
+			"articles",
+			"getIntro",
+			"<br>",
+			"20130401_165630.jpg",
+			"</em>",
+			"<em>",
+			"**<em></em>**",
+			"</strong>",
+			"<strong>",
+			"</span>",
+			"<span style=\"text-decoration:underline;\">",
+			"</p>\n<p>",
+			"[x]",
+			"and",
+			"\"",
+			"17",
+			"preview",
+			"print",
+			"se.in",
+			"collapsed",
+			".in",
+			"var ",
+			"function () ",
+			"ATTR",
+			"match[",
+			"needsContext",
+			"ATTR",
+			"match",
+			"charAt",
+			"lesslint",
+			"@media print {\n    width: 100%;\n    left: 0;\n  }",
+			"itemsDirecotry",
+			"h6",
+			"h5",
+			"h4",
+			"h3",
+			"h2",
+			"h1",
+			"            ",
+			"table",
+			"small",
+			"content",
+			"#menu",
+			"menu",
+			"SiteMenu",
+			"justify",
+			"center",
+			"navbar-right",
+			"reference",
+			"Walter Turncoat",
+			"font",
+			"nav",
+			"menu",
+			"icon-bar",
+			"carousel",
+			"collapse",
+			"\"",
+			"pull-",
+			"pull",
+			"pull-left",
+			".pull-left(",
+			"pull-left",
+			"pull-left(",
+			"pull-left()",
+			".navbar-vertical-align(",
+			".navbar-vertical-align",
+			"left_col",
+			"menu",
+			"#menu",
+			"container",
+			"row",
+			"#banner",
+			"#header",
+			"#menu",
+			"banner",
+			"containter",
+			"bg_B",
+			"#search",
+			"#nav ",
+			"#nav",
+			" #nav",
+			"#nav",
+			"#menu",
+			"container"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  ",
+			"  \n",
+			"\n",
+			"\"rotate-z\":\n",
+			"\"rotate-y\":\n",
+			"\"rotate-x\":\n",
+			"#queue-header\n",
+			"",
+			"<label>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 148.0,
+	"status_bar_visible": true
+}

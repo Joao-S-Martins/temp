@@ -1,0 +1,8 @@
+include ./mixins
+.row
+  .right.col-xs-12.col-sm-6.col-sm-push-6.text-center
+    +SocialLinks()
+  .left.col-xs-12.col-sm-6.col-sm-pull-6.text-center
+    .copyright= locals.owner
+      | <br>&copy; #{ new Date().getFullYear() }, All Rights Reserved.
+    //end .copyright

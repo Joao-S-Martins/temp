@@ -1,0 +1,114 @@
+//-if page.metadata.css
+  script.
+    if (document.styleSheets.length < 5) {
+      var ns = document.createElement('style');
+      document.getElementsByTagName('head')[0].appendChild(ns);
+    }
+    if (typeof(document.styleSheets[4].cssRules) != 'undefined') {
+      if (document.styleSheets[4].cssRules.length > 0) {
+        for (var i = 0; i<document.styleSheets[4].cssRules.length; i++) {
+          document.styleSheets[4].removeRule(i);
+        }
+      }
+    }
+    var css = '!{ page.metadata.css }';
+    var rules = css.split('}');
+    for (var i=0; i<rules.length-1; i++) {
+      document.styleSheets[4].insertRule(rules[i]+'}',i);
+    }
+    document.styleSheets[4].disabled = false;
+//-else
+  script.
+    if (document.styleSheets.length < 5) {
+      var ns = document.createElement('style');
+      document.getElementsByTagName('head')[0].appendChild(ns);
+    }
+    document.styleSheets[4].disabled = true;
+
+//-.modal-header
+  header
+    h2!= typogr(page.title).typogrify()
+    p.post-date
+      i.fa.fa-calendar
+      span(style='margin-left:10px')= moment.utc(page.metadata.date).format('DD MMM YYYY')
+  button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+//-.modal-body
+  article.post-content!= typogr(page.html).typogrify()
+  .divider
+
+
+
+
+
+
+extends ./layout
+block prepend title
+    = page.title + ' - '
+
+block styles
+  // build:[href]:dist /styles/main.min.css 
+  // build:[href]:stage /temp/styles/main.min.css 
+  link(rel='stylesheet', href='/styles/main.css', type='text/css', media='screen, projection, print')
+  // /build 
+
+block append blockingscripts
+  script(src='//cdn.livefyre.com/Livefyre.js')
+  //script(src='http://cdn.livefyre.com/libs/fyre.conv.load.js')
+  script(src='//cdn.livefyre.com/libs/auth-delegates/v0.4.4-beta/auth-delegates.min.js')
+
+block splash
+  - var preview = page.intro
+  - var preview = (typeof(preview) == 'string') ? preview.replace(/(<([^>]+)>)/ig,""):''
+  - var preview = (typeof(preview) == 'string') ? typogr(preview.substring(0,600)).typogrify():''
+  - var preview = (typeof(preview) == 'string') ? preview.substring(0,preview.lastIndexOf(".")+1):''
+  +Splash(page.metadata.photo, page.title)
+
+block header
+  .container
+    .row
+      header.col-xs-12.page-header
+        h3!= typogr(page.title).typogrify()
+        p.post-date
+          i.fa.fa-calendar
+          - mmt = moment(page.metadata.date)
+          span(style='margin-left:1em;margin-right:3em')= env.helpers.utils.formatDate(mmt)
+          button.btn.fa.fa-print(href='javascript:window.print();return false;',title='Print this page')
+        //-+Breadcrumb([{name:'blog',href:'/'},{name:page.title}])
+      //end header
+block content
+  .content-container.container
+    section#content.row
+      aside.col-xs-12.col-sm-1
+        +ShareLinks()
+      //article.col-xs-12.col-md-10
+      article.post.col-xs-12.col-sm-10
+        //header
+          h3!= typogr(page.title).typogrify()
+          p.post-date
+            i.fa.fa-calendar
+            - mmt = moment(page.metadata.date)
+            span(style='margin-left:10px')= env.helpers.utils.formatDate(mmt)
+        //end header
+        .post-content!= typogr(page.html).typogrify()
+      //end .post
+    //end #content
+      //aside.col-xs-12.col-md-4
+        | aside stuff
+    .pagination.row
+      +Paginator('post', prevPage, nextPage)
+    //end .pagination
+    .row
+      .col-xs-12
+        +Comments()
+
+block append asyncscripts
+  - networkName = env.config.livefyre.network.name
+  - networkKey = env.config.livefyre.network.key
+  - sideId = env.config.livefyre.site.id
+  - siteKey = env.config.livefyre.site.key
+  - articleId = (page.title + '-' + page.metadata.date).replace(/ /g, '_')
+  - title = page.title
+  - url = page.url
+  - tags = []
+  - collectionMeta = env.helpers.livefyre.getToken(networkName, networkKey, siteId, siteKey, title, url, tags)
+  +Sidenotes(networkName, sideId, articleId, collectionMeta, '.post-content')
